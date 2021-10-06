@@ -2,7 +2,7 @@ import React from "react";
 import "./CryptoTicker.css";
 export default function CryptoTickers(crypto) {
   return (
-    <div className="header">
+    <div className="header"><div className="hmove">
       {crypto.crypto.map((arr) =>
         arr.map((crypto) => (
           <div className="crypto">
@@ -21,6 +21,6 @@ export default function CryptoTickers(crypto) {
           </div>
         ))
       )}
-    </div>
+      </div></div>
   );
 }
