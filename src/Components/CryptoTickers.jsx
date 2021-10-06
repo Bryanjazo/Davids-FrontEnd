@@ -2,13 +2,13 @@ import React from "react";
 import "./CryptoTicker.css";
 export default function CryptoTickers(crypto) {
   return (
-    <header className="header">
+    <div className="header">
       {crypto.crypto.map((arr) =>
         arr.map((crypto) => (
-          <div className="cryptoHome">
-            <nav className="nav">
-              <ul className="navMenu">
-                <li className="navLi">
+          <div className="crypto">
+            <ul className="navMenu">
+              <div className="div-menu">
+                <li className="navLink">
                   <img
                     className="Crypto-Img"
                     src={crypto.logo_url}
@@ -16,11 +16,11 @@ export default function CryptoTickers(crypto) {
                   />
                   {crypto.symbol} {Math.floor(crypto.price)}
                 </li>
-              </ul>
-            </nav>
+              </div>
+            </ul>
           </div>
         ))
       )}
-    </header>
+    </div>
   );
 }

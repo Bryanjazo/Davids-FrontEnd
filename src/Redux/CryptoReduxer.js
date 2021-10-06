@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getcryptos = createAsyncThunk("crypto/getcryptos", async () => {
   const response = await fetch(
-    `https://api.nomics.com/v1/currencies/ticker?key=5ad6d9416ed39edbcd7d16bf27de2c127bbb6f57&ids=BTC,ETH,XRP&interval=1h&per-page=100&page=1`
+    `https://api.nomics.com/v1/currencies/ticker?key=5ad6d9416ed39edbcd7d16bf27de2c127bbb6f57&ids=BTC,ETH,XRP,ADA,BNB,USDT,SOL,BCH,MATIC,VET,CAKE,LINK,BUSD,AVAX,ALGO,LUNA,DOGE,ICP,AXS,XLM,FIL&interval=1h&per-page=100&page=1`
   );
   const data = await response.json();
   return data;
