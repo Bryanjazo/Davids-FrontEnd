@@ -8,7 +8,23 @@
   align-items: center;
 } */
 
+.cryptoHome {
+  text-align: center;
+}
+
+.cryptoHome.nav-item {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+}
+.cryptoHome.Crypto-Img {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+}
 .Crypto-Img {
+  display: flex;
   max-width: 3.8rem;
   max-height: 5.2rem;
+  border-radius: 50%;
 }
