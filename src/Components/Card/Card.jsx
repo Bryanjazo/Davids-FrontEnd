@@ -5,29 +5,44 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  TwitterShareButton,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from "react-share";
 export default function ImgMediaCard(media) {
+  const mediaDetails = media.media;
   console.log(media);
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt={mediaDetails.title}
         height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={mediaDetails.image_url}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {mediaDetails.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          Source: {mediaDetails.source_id}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <a href={mediaDetails.link}>
+          <Button size="small">Learn More</Button>
+        </a>
+        <Button size="small">Share To:</Button>
+        <FacebookShareButton url={mediaDetails.link}>
+          <FacebookIcon size={15} round={true} />
+        </FacebookShareButton>
+        <TwitterShareButton url={mediaDetails.link}>
+          <TwitterIcon size={15} round={true} />
+        </TwitterShareButton>
       </CardActions>
     </Card>
   );
