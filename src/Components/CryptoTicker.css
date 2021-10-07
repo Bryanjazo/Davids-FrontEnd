@@ -1,17 +1,14 @@
+/* .Crypto-Img {
+  margin: 10px;
+  width: 4rem;
+  height: 4.2rem;
+  border-radius: 50%;
+} */
+
 /* .headerCryp {
   border-bottom: 2px solid #e2e8f0;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-/* .header {
-  display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
-}
 .Crypto-Img {
   margin: 10px;
   width: 4rem;
@@ -19,16 +16,35 @@
 
   border-radius: 50%;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+ .crypto {
+  height: 75px;
+}
+.header {
+  display: flex;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.header::-webkit-scrollbar {
+  display: none;
+}
+
 .navMenu {
-  width: 120px;
+  width: 100px;
   object-fit: contain;
   transition: tranform 450ms;
   margin-right: 10px;
 }
 .navMenu:hover {
   transform: scale(1.08);
-} */
-/* .crypto {
+}
+ .crypto {
   object-fit: contain;
 }
 
