@@ -1,14 +1,22 @@
-/* .Crypto-Img {
-  margin: 10px;
-  width: 4rem;
-  height: 4.2rem;
-  border-radius: 50%;
-} */
-
-/* .headerCryp {
+.headerCryp {
   border-bottom: 2px solid #e2e8f0;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerCrypto {
+  overflow: hidden;
+  overflow-x: scroll;
+  height: 10vh;
+  /* remove once ticker is working */
+}
+
+.hmove {
+  display: flex;
+}
 .Crypto-Img {
   margin: 10px;
   width: 4rem;
@@ -16,27 +24,8 @@
 
   border-radius: 50%;
 }
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} 
- .crypto {
-  height: 75px;
-}
-.header {
-  display: flex;
-
-  overflow-y: hidden;
-  overflow-x: scroll;
-}
-.header::-webkit-scrollbar {
-  display: none;
-}
-
 .navMenu {
-  width: 100px;
+  width: 90px;
   object-fit: contain;
   transition: tranform 450ms;
   margin-right: 10px;
@@ -44,14 +33,39 @@
 .navMenu:hover {
   transform: scale(1.08);
 }
- .crypto {
-  object-fit: contain;
-}
-
-
 .navLink {
+  height: 30px;
 }
+.crypto {
+  object-fit: contain;
+
+  /* either object-fit or flex-shrink */
+  /* flex-shrink: 0; */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+}
+
+/* 
+.navLink {
+} */
 .navMenu {
   display: flex;
   padding: 1rem 2.5rem;
-} */
+}
+
+@keyframes tickerh {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-400%, 0, 0);
+  }
+}
+.hmove {
+  animation: tickerh linear 45s infinite;
+}
+.hmove:hover {
+  animation-play-state: paused;
+}
