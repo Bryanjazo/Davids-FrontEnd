@@ -7,11 +7,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.headerCrypto {
+.header {
   overflow: hidden;
   overflow-x: scroll;
-  height: 13vh;
-  border-bottom: 2px solid #e2e8f0;
+
+  /* remove once ticker is working */
 }
 
 .hmove {
@@ -25,7 +25,7 @@
   border-radius: 50%;
 }
 .navMenu {
-  width: 90px;
+  width: 120px;
   object-fit: contain;
   transition: tranform 450ms;
   margin-right: 10px;
@@ -33,20 +33,19 @@
 .navMenu:hover {
   transform: scale(1.08);
 }
-.navLink {
-  height: 30px;
-}
 .crypto {
   object-fit: contain;
-
   /* either object-fit or flex-shrink */
   /* flex-shrink: 0; */
   width: 100%;
   box-sizing: border-box;
-  padding: 2px;
+  padding: 10px;
   text-align: center;
 }
 
+/* 
+  .navLink {
+  } */
 .navMenu {
   display: flex;
   padding: 1rem 2.5rem;
@@ -61,7 +60,7 @@
   }
 }
 .hmove {
-  animation: tickerh linear 45s infinite;
+  animation: tickerh linear 30s infinite;
 }
 .hmove:hover {
   animation-play-state: paused;
