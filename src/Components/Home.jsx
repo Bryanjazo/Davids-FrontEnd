@@ -4,6 +4,8 @@ import { getcryptos, getnewsArticles } from "../Redux/CryptoReduxer";
 import { useSelector } from "react-redux";
 import CryptoTickers from "./Crypto/CryptoTickers";
 import NewsArticles from "./NewsContainer/NewsArticles";
+
+import HeadlineCard from "./Card/HeadlineCard";
 import Features from "./NewsContainer/Features";
 import Recents from "./NewsContainer/Recents";
 import "./Home.css";
@@ -21,6 +23,7 @@ export default function Home() {
   return (
     <div className="home">
       <CryptoTickers crypto={cryptos} />
+
       <div className="split">
         <NewsArticles news={newsArticles} />
         <Features />
