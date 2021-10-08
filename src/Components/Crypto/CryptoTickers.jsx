@@ -25,7 +25,7 @@ export default function CryptoTickers(crypto) {
           ))
         )}
         </div>
-        <div className="scroll hmove2">
+        {/* <div className="scroll hmove2">
         {crypto.crypto.map((arr) => arr.map((crypto) => (
             <div className="crypto">
               <ul className="navMenu">
@@ -46,6 +46,7 @@ export default function CryptoTickers(crypto) {
             </div>
           ))
         )}
-        </div></section></div> 
+        </div> */}
+        </section></div> 
   );
 }
