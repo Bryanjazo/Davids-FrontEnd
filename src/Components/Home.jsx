@@ -9,6 +9,7 @@ import Recents from "./NewsContainer/Recents"
 import './Home.css'
 
 
+
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
 
@@ -23,6 +24,7 @@ export default function Home() {
     <div className="home">
       <CryptoTickers crypto={cryptos} />
       <div className='split'>
+
       <NewsArticles news={newsArticles} />
       <Features/>
       <Recents/>
