@@ -1,0 +1,19 @@
+.cardNews{
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.headline{
+ padding-left: 1rem;
+ font-size: 14px;
+ padding: 10px;
+ padding-right: 10px;
+ border-top: 4px solid black;
+ border-bottom: 2px solid black;
+}
+
+.headlineSection{
+    float: left;
+    width: 28%;
+    padding-right: 10px;
+}

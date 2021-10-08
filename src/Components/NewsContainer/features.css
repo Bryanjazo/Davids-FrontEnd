@@ -1,0 +1,17 @@
+
+.featuresSection{
+    
+    width: 45%;
+    float: left;
+    padding-right: 10px;
+ 
+} 
+
+.featureTitle{
+ 
+ font-size: 14px;
+ padding: 10px;
+ border-top: 4px solid black;
+ border-bottom: 2px solid black;
+}
+

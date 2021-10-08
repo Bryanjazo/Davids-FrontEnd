@@ -1,0 +1,16 @@
+.recentSection{
+    width: 25%;
+    float: left;
+    padding: 2rempx;
+    
+}
+
+
+.recentsTitle{
+  
+    font-size: 14px;
+    padding: 10px;
+   
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+}
