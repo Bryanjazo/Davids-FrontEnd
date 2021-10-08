@@ -1,5 +1,6 @@
 import './HeadlineCard.css';
-
+import test from '../images/test.png'
+import './HeadlineCard.css'
 export default function HeadlineCard(){
     return(
         <div>
@@ -8,7 +9,7 @@ export default function HeadlineCard(){
                     <h1> Bitcoin Skyrockets Over $50,000.00 </h1>
                 </div>
                 <div className="sub-header">
-                    <p className="catagory">
+                    <p className="category">
                         Category
                     </p>
                     <p className="date">
@@ -18,8 +19,46 @@ export default function HeadlineCard(){
                         Author
                     </p>
                 </div>
-                <div className="hl-card-img">
-                    <img src="" alt="" />
+                <div className="img" >
+                    <img src={test} alt="" id="img"/>
+                </div>
+            </div>
+            <div className="hl-card">
+                <div className="header">
+                    <h1> Bitcoin Skyrockets Over $50,000.00 </h1>
+                </div>
+                <div className="sub-header">
+                    <p className="category">
+                        Category
+                    </p>
+                    <p className="date">
+                        Date
+                    </p>
+                    <p className="author">
+                        Author
+                    </p>
+                </div>
+                <div className="img" >
+                    <img src={test} alt="" id="img"/>
+                </div>
+            </div>
+            <div className="hl-card">
+                <div className="header">
+                    <h1> Bitcoin Skyrockets Over $50,000.00 </h1>
+                </div>
+                <div className="sub-header">
+                    <p className="category">
+                        Category
+                    </p>
+                    <p className="date">
+                        Date
+                    </p>
+                    <p className="author">
+                        Author
+                    </p>
+                </div>
+                <div className="img" >
+                    <img src={test} alt="" id="img"/>
                 </div>
             </div>
         </div>
