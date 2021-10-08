@@ -1,0 +1,21 @@
+#img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.hl-card:hover {
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+
+.date {
+    font-size: 12px;
+}
+
+.category {
+    font-size: 12px;
+}
+
+.author {
+    font-size: 12px;
+}
