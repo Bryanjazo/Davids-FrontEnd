@@ -1,7 +1,6 @@
 import React from "react";
 import ImgMediaCard from "../Card/Card";
-
-
+import HeadlineCard from "../Card/HeadlineCard";
 import styles from './NewsArticle.css'
 
 export default function NewsArticles(news) {
@@ -24,6 +23,7 @@ export default function NewsArticles(news) {
     <div className="cardNews">
       <div className="cardNews1">{cardOne}</div>
       <div>{cardTwo}</div>
+      <div className="CardNews1"><HeadlineCard/></div>
     </div>
     </div>
   );
