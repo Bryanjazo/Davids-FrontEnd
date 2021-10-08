@@ -3,17 +3,21 @@
 }
 
 .r-card {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .date {
     font-size: 12px;
+    color: blue;
 }
 
 .category {
     font-size: 12px;
+    color: blue;
 }
 
 .author {
     font-size: 12px;
+    color: blue;
+    padding-right: 8px;
 }
