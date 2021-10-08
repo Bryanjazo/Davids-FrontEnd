@@ -8,10 +8,13 @@
 } 
 
 .featureTitle{
- 
  font-size: 14px;
  padding: 10px;
  border-top: 4px solid black;
  border-bottom: 2px solid black;
 }
 
+.featuresSection {
+    padding-right: 10px;
+    padding-left: 10px;
+}
