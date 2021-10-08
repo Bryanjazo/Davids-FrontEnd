@@ -14,6 +14,7 @@
 }
 .hl-card {
   padding-top: 10px;
+  background-color: aliceblue;
 }
 .hl-card:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
