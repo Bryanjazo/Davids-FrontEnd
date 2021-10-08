@@ -9,7 +9,10 @@ import HeadlineCard from "./Card/HeadlineCard";
 import Features from "./NewsContainer/Features";
 import Recents from "./NewsContainer/Recents";
 import "./Home.css";
-
+import Lifestyle from "./NewsContainer/Lifestyle";
+import BlockChain from "./NewsContainer/BlockChain";
+import LearnCrypto from "./NewsContainer/LearnCrypto";
+import WritersFeed from "./NewsContainer/WritersFeed";
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
 
@@ -28,6 +31,10 @@ export default function Home() {
         <NewsArticles news={newsArticles} />
         <Features />
         <Recents />
+        <Lifestyle />
+        <BlockChain />
+        <LearnCrypto />
+        <WritersFeed />
       </div>
     </div>
   );
