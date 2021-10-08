@@ -2,13 +2,11 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getcryptos, getnewsArticles } from "../Redux/CryptoReduxer";
 import { useSelector } from "react-redux";
-import CryptoTickers from "./CryptoTickers";
+import CryptoTickers from "./Crypto/CryptoTickers";
 import NewsArticles from "./NewsContainer/NewsArticles";
-import Features from "./NewsContainer/Features"
-import Recents from "./NewsContainer/Recents"
-import './Home.css'
-
-
+import Features from "./NewsContainer/Features";
+import Recents from "./NewsContainer/Recents";
+import "./Home.css";
 
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
@@ -23,13 +21,11 @@ export default function Home() {
   return (
     <div className="home">
       <CryptoTickers crypto={cryptos} />
-      <div className='split'>
-
-      <NewsArticles news={newsArticles} />
-      <Features/>
-      <Recents/>
+      <div className="split">
+        <NewsArticles news={newsArticles} />
+        <Features />
+        <Recents />
       </div>
-      
     </div>
   );
 }
