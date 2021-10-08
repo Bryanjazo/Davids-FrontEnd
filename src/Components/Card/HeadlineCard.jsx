@@ -1,6 +1,6 @@
 import './HeadlineCard.css';
 import test from '../images/test.png'
-import './HeadlineCard.css'
+
 export default function HeadlineCard(){
     return(
         <div>
@@ -10,10 +10,10 @@ export default function HeadlineCard(){
                 </div>
                 <div className="sub-header">
                     <p className="category">
-                        Category
+                        BlockChain
                     </p>
                     <p className="date">
-                        Date
+                        October 6,2021
                     </p>
                     <p className="author">
                         Author
@@ -29,10 +29,10 @@ export default function HeadlineCard(){
                 </div>
                 <div className="sub-header">
                     <p className="category">
-                        Category
+                        BlockChain
                     </p>
                     <p className="date">
-                        Date
+                        October 6,2021
                     </p>
                     <p className="author">
                         Author
@@ -48,10 +48,10 @@ export default function HeadlineCard(){
                 </div>
                 <div className="sub-header">
                     <p className="category">
-                        Category
+                        BlockChain
                     </p>
                     <p className="date">
-                        Date
+                        October 6,2021
                     </p>
                     <p className="author">
                         Author
