@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getcryptos, getnewsArticles } from "../Redux/CryptoReduxer";
 import { useSelector } from "react-redux";
-import CryptoTickers from "./CryptoTickers";
+import CryptoTickers from "./Crypto/CryptoTickers";
 import NewsArticles from "./NewsContainer/NewsArticles";
 import Features from "./NewsContainer/Features"
 import Recents from "./NewsContainer/Recents"
