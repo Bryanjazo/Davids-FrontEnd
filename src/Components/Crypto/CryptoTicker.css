@@ -12,7 +12,6 @@
   overflow-x: scroll;
   height: 13vh;
   border-bottom: 2px solid #e2e8f0;
-  
 }
 
 .Crypto-Img {
@@ -76,31 +75,44 @@
 .crypto {
   animation: ticker-kf 15s linear infinite;
 }
-
+.cryptoText {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 11px;
+  padding-right: 5px;
+}
 .scroll {
   width: 100%;
   display: flex;
   animation: tickerh2 linear 40s infinite;
-
 }
+.CryptoContainer {
+  display: flex;
+}
+.cryptoName {
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 5px;
+  font-size: 11px;
+}
+.cryptoTextPrice {
+  font-family: "Times New Roman", Times, serif;
+  padding-right: 3px;
+  font-weight: 100;
+  font-size: 11px;
+}
+
 .hmove {
   animation: tickerh linear 40s infinite;
   animation-delay: -40s;
- 
 }
 .hmove:hover {
   animation-play-state: paused;
 }
 
-
-
-
-section .scroll div:nth-child(2){
+section .scroll div:nth-child(2) {
   animation: tickerh2 40s linear infinite;
   animation-delay: -20s;
 }
 
-section .scroll div{
+section .scroll div {
   animation: tickerh2 40s linear infinite;
-  
 }

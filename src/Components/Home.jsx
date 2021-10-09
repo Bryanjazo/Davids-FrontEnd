@@ -13,6 +13,7 @@ import Lifestyle from "./NewsContainer/Lifestyle";
 import BlockChain from "./NewsContainer/BlockChain";
 import LearnCrypto from "./NewsContainer/LearnCrypto";
 import WritersFeed from "./NewsContainer/WritersFeed";
+import Footer from "./Footer/Footer";
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
 
@@ -36,6 +37,7 @@ export default function Home() {
         <LearnCrypto />
         <WritersFeed />
         <Teamheader />
+        <Footer />
       </div>
     </div>
   );
