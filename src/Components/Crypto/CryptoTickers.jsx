@@ -3,12 +3,12 @@ import "./CryptoTicker.css";
 const roundAccurately = (number, decimalPlaces) => Number(Math.round(number + "e" + decimalPlaces) + "e-" + decimalPlaces);
 export default function CryptoTickers(crypto) {
   return (
-    <div className="headerCrypto"><section><div className="scroll hmove">
+    <div className="headerCrypto"><div className="scroll hmove">
         {crypto.crypto.map((arr) => arr.map((crypto) => (
             <div className="crypto">
-              <ul className="navMenu">
+              {/* <ul className="navMenu"> */}
                 <div className="div-menu">
-                  <li className="navLink">
+                  {/* <li className="navLink"> */}
                     <img
                       className="Crypto-Img"
                       src={crypto.logo_url}
@@ -18,9 +18,9 @@ export default function CryptoTickers(crypto) {
                     {crypto.price > 50
                       ? Math.round(crypto.price)
                       : Math.round(crypto.price * 1000) / 1000}
-                  </li>
+                  {/* </li> */}
                 </div>
-              </ul>
+              {/* </ul> */}
             </div>
           ))
         )}
@@ -47,6 +47,6 @@ export default function CryptoTickers(crypto) {
           ))
         )}
         </div> */}
-        </section></div> 
+        </div> 
   );
 }

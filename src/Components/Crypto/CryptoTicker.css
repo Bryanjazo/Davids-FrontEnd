@@ -49,17 +49,17 @@
   padding: 1rem 2.5rem;
 }
 
-@keyframes tickerh {
+@keyframes ticker-kf {
   0% {
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
+
   100% {
-    
-    transform: translate3d(-400%);
+    transform: translate3d(-30rem, 0, 0);
   }
 }
 
-@keyframes tickerh2 {
+/* @keyframes tickerh2 {
   0% {
     transform: translate3d(100%, 0, 0);
   }
@@ -67,6 +67,14 @@
     
     transform: translate3d(-400%);
   }
+} */
+/* 
+.Crypto-Img {
+  animation: ticker-kf 18s linear infinite;
+} */
+
+.crypto {
+  animation: ticker-kf 15s linear infinite;
 }
 
 .scroll {
