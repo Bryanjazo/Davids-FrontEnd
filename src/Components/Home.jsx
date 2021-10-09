@@ -4,7 +4,7 @@ import { getcryptos, getnewsArticles } from "../Redux/CryptoReduxer";
 import { useSelector } from "react-redux";
 import CryptoTickers from "./Crypto/CryptoTickers";
 import NewsArticles from "./NewsContainer/NewsArticles";
-
+import Teamheader from "./TeamContainer/Teamheader";
 import HeadlineCard from "./Card/HeadlineCard";
 import Features from "./NewsContainer/Features";
 import Recents from "./NewsContainer/Recents";
@@ -35,6 +35,7 @@ export default function Home() {
         <BlockChain />
         <LearnCrypto />
         <WritersFeed />
+        <Teamheader />
       </div>
     </div>
   );
