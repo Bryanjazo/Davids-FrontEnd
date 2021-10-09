@@ -20,7 +20,7 @@ export default function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getcryptos());
-    dispatch(getnewsArticles());
+    // dispatch(getnewsArticles());
   }, []);
 
   return (
