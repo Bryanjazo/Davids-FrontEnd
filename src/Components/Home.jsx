@@ -37,6 +37,7 @@ export default function Home() {
         <LearnCrypto />
         <WritersFeed />
         <Teamheader />
+        <Footer />
       </div>
     </div>
   );
