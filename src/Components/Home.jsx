@@ -9,10 +9,11 @@ import HeadlineCard from "./Card/HeadlineCard";
 import Features from "./NewsContainer/Features";
 import Recents from "./NewsContainer/Recents";
 import "./Home.css";
-import Lifestyle from "./NewsContainer/Lifestyle";
-import BlockChain from "./NewsContainer/BlockChain";
-import LearnCrypto from "./NewsContainer/LearnCrypto";
-import WritersFeed from "./NewsContainer/WritersFeed";
+import Lifestyle from "./LifestyleContainer/Lifestyle";
+import BlockChain from "./BlockChainContainer/BlockChain";
+import LearnCrypto from "./LearnCrypto/LearnCrypto";
+import WritersFeed from "./WritersFeed/WritersFeed";
+import Footer from "./Footer/Footer";
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
 
