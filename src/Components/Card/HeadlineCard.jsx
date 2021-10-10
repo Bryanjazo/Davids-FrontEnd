@@ -7,12 +7,22 @@ export default function HeadlineCard() {
     <div>
       <div className="hl-card">
         <div className="header">
-          <h1> Bitcoin Skyrockets Over $50,000.00 </h1>
+          <h1>
+            {" "}
+            Bitcoin Rockets to Over $50k as ‘Uptober’ Rally Prompts All-Time
+            High Predictions{" "}
+          </h1>
         </div>
         <div className="sub-header">
-          <p className="category"><i class="far fa-clone"></i> BlockChain</p>
-          <p className="date"><i class="far fa-calendar"></i> October 6,2021</p>
-          <p className="author"><i class="far fa-user-circle"></i> Author</p>
+          <p className="category">
+            <i class="far fa-clone"></i> BlockChain
+          </p>
+          <p className="date">
+            <i class="far fa-calendar"></i> October 6,2021
+          </p>
+          <p className="author">
+            <i class="far fa-user-circle"></i> Author
+          </p>
         </div>
         <div className="img">
           <img src={test} alt="" id="img" />
@@ -20,12 +30,22 @@ export default function HeadlineCard() {
       </div>
       <div className="hl-card">
         <div className="header">
-          <h1> Bitcoin Skyrockets Over $50,000.00 </h1>
+          <h1>
+            {" "}
+            Bitcoin Rockets to Over $50k as ‘Uptober’ Rally Prompts All-Time
+            High Predictions
+          </h1>
         </div>
         <div className="sub-header">
-          <p className="category"><i class="far fa-clone"></i> BlockChain</p>
-          <p className="date"><i class="far fa-calendar"></i> October 6,2021</p>
-          <p className="author"><i class="far fa-user-circle"></i> Author</p>
+          <p className="category">
+            <i class="far fa-clone"></i> BlockChain
+          </p>
+          <p className="date">
+            <i class="far fa-calendar"></i> October 6,2021
+          </p>
+          <p className="author">
+            <i class="far fa-user-circle"></i> Author
+          </p>
         </div>
         <div className="img">
           <img src={test} alt="" id="img" />
@@ -33,12 +53,22 @@ export default function HeadlineCard() {
       </div>
       <div className="hl-card">
         <div className="header">
-          <h1> Bitcoin Skyrockets Over $50,000.00 </h1>
-            </div>
+          <h1>
+            {" "}
+            Bitcoin Rockets to Over $50k as ‘Uptober’ Rally Prompts All-Time
+            High Predictions{" "}
+          </h1>
+        </div>
         <div className="sub-header">
-          <p className="category"><i class="far fa-clone"></i> BlockChain</p>
-          <p className="date"><i class="far fa-calendar"></i> October 6,2021</p>
-          <p className="author"><i class="far fa-user-circle"></i> Author</p>
+          <p className="category">
+            <i class="far fa-clone"></i> BlockChain
+          </p>
+          <p className="date">
+            <i class="far fa-calendar"></i> October 6,2021
+          </p>
+          <p className="author">
+            <i class="far fa-user-circle"></i> Author
+          </p>
         </div>
         <div className="img">
           <img src={test} alt="" id="img" />
