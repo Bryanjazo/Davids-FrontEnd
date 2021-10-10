@@ -8,12 +8,22 @@ export default function Features() {
       <h3 className="featureTitle">Features</h3>
       <div className="hl-card">
         <div className="header">
-          <h1> Bitcoin Skyrockets Over $50,000.00 </h1>
+          <h1>
+            {" "}
+            Bitcoin Rockets to Over $50k as ‘Uptober’ Rally Prompts All-Time
+            High Predictions{" "}
+          </h1>
         </div>
         <div className="sub-header">
-          <p className="category">BlockChain</p>
-          <p className="date">October 6,2021</p>
-          <p className="author">Author</p>
+          <p className="category">
+            <i class="far fa-clone"></i> BlockChain
+          </p>
+          <p className="date">
+            <i class="far fa-calendar"></i> October 6,2021
+          </p>
+          <p className="author">
+            <i class="far fa-user-circle"></i> Author
+          </p>
         </div>
         <div className="img">
           <img src={test} alt="" id="img" />
@@ -29,26 +39,25 @@ export default function Features() {
             saw October being dubbed “Uptober”. The month started on a high
             after U.S Federal Reserve Chairman Jerome Powell closed out
             September by saying he has “no intention” of banning crypto.
-
             <li class="container">
-              <input type="checkbox" id="check_id"/>
+              <input type="checkbox" id="check_id" />
               <label for="check_id"></label>
               <ul>
-              Securities and Exchange Commission Chair Gary Gensler also said the
-              US would follow in China’s footsteps by banning crypto Speaking at a
-              House hearing, he said: “Our approach is really quite different.”
-              These two important statements assuage fears of an imminent crypto
-              crackdown, but that wasn’t the end of the good news because
-              announcements from two financial giants raised hopes that mainstream
-              adoption could be on the way. Earlier this week, Bank of American
-              released an analyst note that said “the digital asset universe is
-              too large to ignore”. “We believe crypto-based digital assets could
-              form an entirely new asset class,” analysts wrote. “Bitcoin is
-              important with a market value of ~$900bn, but the digital asset
-              ecosystem is so much more.
+                Securities and Exchange Commission Chair Gary Gensler also said
+                the US would follow in China’s footsteps by banning crypto
+                Speaking at a House hearing, he said: “Our approach is really
+                quite different.” These two important statements assuage fears
+                of an imminent crypto crackdown, but that wasn’t the end of the
+                good news because announcements from two financial giants raised
+                hopes that mainstream adoption could be on the way. Earlier this
+                week, Bank of American released an analyst note that said “the
+                digital asset universe is too large to ignore”. “We believe
+                crypto-based digital assets could form an entirely new asset
+                class,” analysts wrote. “Bitcoin is important with a market
+                value of ~$900bn, but the digital asset ecosystem is so much
+                more.
               </ul>
             </li>
-
           </p>
         </div>
       </div>
