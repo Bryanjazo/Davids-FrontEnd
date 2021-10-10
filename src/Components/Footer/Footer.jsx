@@ -1,4 +1,7 @@
 import React from "react";
+
+import './footer.css'
+
 import {
 Box,
 Container,
@@ -11,7 +14,9 @@ Heading,
 export default function Footer(){
 return (
 	<Box>
-	<h1 style={{ color: "green",
+
+	<h1 style={{color:"white"}}>Logo goes here</h1>
+	<h1  style={{ color: "green",
 				textAlign: "center",
 				marginTop: "-50px" }}>
 	</h1>

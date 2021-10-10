@@ -2,7 +2,9 @@ import React from "react";
 import "./CryptoTicker.css";
 const roundAccurately = (number, decimalPlaces) =>
   Number(Math.round(number + "e" + decimalPlaces) + "e-" + decimalPlaces);
+
 export default function CryptoTickers(crypto) {
+
   return (
     <div className="headerCrypto">
       <div className="scroll hmove">
@@ -30,6 +32,7 @@ export default function CryptoTickers(crypto) {
                 {/* </li> */}
               </div>
               {/* </ul> */}
+
             </div>
           ))
         )}
@@ -38,7 +41,6 @@ export default function CryptoTickers(crypto) {
         {crypto.crypto.map((arr) => arr.map((crypto) => (
             <div className="crypto">
               <ul className="navMenu">
-                <div className="div-menu">
                   <li className="navLink">
                     <img
                       className="Crypto-Img"
@@ -50,7 +52,6 @@ export default function CryptoTickers(crypto) {
                       ? Math.round(crypto.price)
                       : Math.round(crypto.price * 1000) / 1000}
                   </li>
-                </div>
               </ul>
             </div>
           ))
