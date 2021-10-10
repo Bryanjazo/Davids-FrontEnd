@@ -3,6 +3,7 @@
   background-color:white;
   overflow: auto;
   float: right;
+  padding: 50px;
 }
 
 .navbar a:hover {
