@@ -1,0 +1,28 @@
+.writers-container {
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+.writers-Header {
+  padding-bottom: 7px;
+}
+
+.WritersPContainer {
+  display: flex;
+}
+.writers-author {
+  padding-right: 10px;
+}
+
+.writers-p {
+  color: #59bfff;
+  font-size: 11.5px;
+}
+
+.recentsTitleWriters {
+  font-size: 14px;
+  padding: 10px;
+  color: #26abff;
+  border-top: 4px solid black;
+  border-bottom: 2px solid black;
+}
