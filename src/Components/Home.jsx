@@ -4,12 +4,15 @@ import { getcryptos, getnewsArticles } from "../Redux/CryptoReduxer";
 import { useSelector } from "react-redux";
 import CryptoTickers from "./Crypto/CryptoTickers";
 import NewsArticles from "./NewsContainer/NewsArticles";
-import Features from "./NewsContainer/Features"
-import Recents from "./NewsContainer/Recents"
-import './Home.css'
-
-
-
+import Teamheader from "./TeamContainer/Teamheader";
+import HeadlineCard from "./Card/HeadlineCard";
+import Features from "./NewsContainer/Features";
+import Recents from "./NewsContainer/Recents";
+import "./Home.css";
+import Lifestyle from "./NewsContainer/Lifestyle";
+import BlockChain from "./NewsContainer/BlockChain";
+import LearnCrypto from "./NewsContainer/LearnCrypto";
+import WritersFeed from "./NewsContainer/WritersFeed";
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
 
@@ -17,19 +20,23 @@ export default function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getcryptos());
-    dispatch(getnewsArticles());
+    // dispatch(getnewsArticles());
   }, []);
 
   return (
     <div className="home">
       <CryptoTickers crypto={cryptos} />
-      <div className='split'>
 
-      <NewsArticles news={newsArticles} />
-      <Features/>
-      <Recents/>
+      <div className="split">
+        <NewsArticles news={newsArticles} />
+        <Features />
+        <Recents />
+        <Lifestyle />
+        <BlockChain />
+        <LearnCrypto />
+        <WritersFeed />
+        <Teamheader />
       </div>
-      
     </div>
   );
 }

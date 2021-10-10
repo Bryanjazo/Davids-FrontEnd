@@ -3,3 +3,8 @@
     display: table;
     clear: both;
 }
+
+.home {
+    padding-left: 100px;
+    padding-right: 100px;
+}
