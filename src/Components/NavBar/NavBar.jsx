@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
+import logo from '../images/logo.png'
 import Hamburger from "hamburger-react";
 export default function NavBar() {
   const [hamburger, setHamburger] = useState("hamburger");
@@ -20,36 +21,21 @@ export default function NavBar() {
 
   return (
     <header className="header">
-      <nav className="navbar">
-        <a href="#" className="nav-logo">
-          Davids Logo Goes Here
-        </a>
-        <ul className={menu}>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              Services
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              Blog
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              Contact
-            </a>
-          </li>
-        </ul>
+      <img width="350px" height="auto" class="logo" className="logo-img" src={logo}  alt="logo"  />
+      {/* <nav className="navbar"> */}
+          <div class="topnav">
+            <a href="#" className="nav-link">NEWSLETTER</a>
+            <a href="#" className="nav-link">PODCASTS</a>
+            <div className="topnav-right" >
+              <a href="#" className="nav-link">EVENTS</a>
+              <a href="#" className="nav-link">WEBINARS</a>
+              <a href="#" className="nav-link">WE'RE HIRING!</a>
+            </div>
+          </div>
         <div className={hamburger} onClick={handleClick}>
           <Hamburger toggled={isHamburger} />
         </div>
-      </nav>
+      {/* </nav> */}
     </header>
   );
 }
