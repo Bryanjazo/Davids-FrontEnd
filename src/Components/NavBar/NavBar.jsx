@@ -29,7 +29,7 @@ export default function NavBar() {
             <div className="topnav-right" >
               <a href="#" className="nav-link">EVENTS</a>
               <a href="#" className="nav-link">WEBINARS</a>
-              <a href="#" className="nav-link">WE'RE HIRING!</a>
+              <button href="#" className="nav-link">WE'RE HIRING!</button>
             </div>
           </div>
         <div className={hamburger} onClick={handleClick}>
