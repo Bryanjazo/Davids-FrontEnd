@@ -2,6 +2,8 @@ import React from "react";
 
 import "./footer.css";
 
+import logo from "../images/smallLogo.png";
+
 import {
   Box,
   Container,
@@ -14,7 +16,15 @@ import {
 export default function Footer() {
   return (
     <Box>
-      <h1 style={{ color: "white" }}>Logo goes here</h1>
+    {/* <img width="350px" height="auto" class="small-logo-img" src="./images/smallLogo.png" alt="small-logo"> */}
+    <div> <img
+        width="30px"
+        height="auto"
+        class="small-logo"
+        className="small-logo-img"
+        src={logo}
+        alt="small-logo"
+      /></div>
       <h1
         style={{ color: "green", textAlign: "center", marginTop: "-50px" }}
       ></h1>
@@ -62,6 +72,9 @@ export default function Footer() {
                 <span style={{ marginLeft: "10px" }}>Youtube</span>
               </i>
             </FooterLink>
+          </Column>
+          <Column>
+          <Heading className="newsletter">SIGN UP FOR NEWSLETTER</Heading>
           </Column>
         </Row>
       </Container>
