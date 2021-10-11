@@ -1,6 +1,6 @@
 .writers-container {
   padding-top: 40px;
-  padding-left: 60px;
+  padding-left: 25px;
 }
 
 .writers-Header {
@@ -23,7 +23,7 @@
   font-size: 32px;
   padding: 10px;
   color: #26abff;
-  margin-right: 150px;
+  margin-right: 80px;
   border-top: 6px solid black;
   border-bottom: 2px solid black;
 }

@@ -20,19 +20,14 @@ export default function TeamCard() {
             <p>Position</p>
           </div>
           <share>
-            <div>
-              <div className="socialItems">
-                <i class="fab fa-facebook fa-2x social"></i>
-              </div>
-              <div className="socialItems">
-                <i class="fab fa-linkedin fa-2x social"></i>
-              </div>
-              <div className="socialItems">
-                <i class="fab fa-instagram fa-2x social"></i>
-              </div>
-              <div className="socialItems">
-                <i class="fab fa-youtube fa-2x social"></i>
-              </div>
+            <div className="socialContainer">
+              <i class="fab fa-facebook fa-2x social"></i>
+
+              <i class="fab fa-linkedin fa-2x social"></i>
+
+              <i class="fab fa-instagram fa-2x social"></i>
+
+              <i class="fab fa-youtube fa-2x social"></i>
             </div>
           </share>
         </div>

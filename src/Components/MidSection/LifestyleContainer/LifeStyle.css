@@ -1,14 +1,13 @@
 .lifeStyle-container {
   padding-top: 40px;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .lifeStyleHeader {
-  
   font-size: 32px;
   padding: 10px;
   padding-right: 10px;
-  margin-right: 150px;
+  margin-right: 80px;
   border-top: 6px solid black;
   border-bottom: 2px solid black;
 }
@@ -28,5 +27,5 @@
   font-size: 14px;
   float: left;
   /* width: 28%; */
-  padding-right: 10px;
+  padding-right: 0px;
 }

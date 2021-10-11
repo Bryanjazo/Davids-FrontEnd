@@ -73,7 +73,9 @@
 .Crypto-Img {
   animation: ticker-kf 18s linear infinite;
 } */
-
+.headerCrypto {
+  height: 2vh;
+}
 .crypto {
   animation: ticker-kf 15s linear infinite;
 }
