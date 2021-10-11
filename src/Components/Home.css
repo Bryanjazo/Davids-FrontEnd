@@ -1,31 +1,24 @@
 .split:after {
-    content: "";
-    display: table;
-    clear: both;
-
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
-.newsSplit{
-    height: 1225px;
-    margin-bottom: 5px;
+.newsSplit {
+  height: 1225px;
+  margin-bottom: 5px;
 }
 
 .home {
-    padding-left: 100px;
-    padding-right: 100px;
+  padding-left: 25px;
 }
 
-
-.width{
-    width: 25%;
-    padding-left: 10px;
-    padding-right: 10px
+.width {
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-
-.split2{
-    position: relative;
+.split2 {
+  position: relative;
 }
-
-

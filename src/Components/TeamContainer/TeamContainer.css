@@ -17,7 +17,12 @@
 }
 
 .cards {
+  overflow: scroll;
+  max-height: 739px;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+}
+.cards::-webkit-scrollbar {
+  display: none;
 }

@@ -39,23 +39,23 @@ export default function Features() {
             saw October being dubbed “Uptober”. The month started on a high
             after U.S Federal Reserve Chairman Jerome Powell closed out
             September by saying he has “no intention” of banning crypto.
+            Securities and Exchange Commission Chair Gary Gensler also said the
+            US would follow in China’s footsteps by banning crypto Speaking at a
+            House hearing, he said: “Our approach is really quite different.”
+            These two important statements assuage fears of an imminent crypto
+            crackdown, but that wasn’t the end of the good news because
+            announcements from two financial giants raised hopes that mainstream
+            adoption could be on the way. Earlier this week, Bank of American
+            released an analyst note that said “the digital asset universe is
             <li class="container">
               <input type="checkbox" id="check_id" />
               <label for="check_id"></label>
               <ul>
-                Securities and Exchange Commission Chair Gary Gensler also said
-                the US would follow in China’s footsteps by banning crypto
-                Speaking at a House hearing, he said: “Our approach is really
-                quite different.” These two important statements assuage fears
-                of an imminent crypto crackdown, but that wasn’t the end of the
-                good news because announcements from two financial giants raised
-                hopes that mainstream adoption could be on the way. Earlier this
-                week, Bank of American released an analyst note that said “the
-                digital asset universe is too large to ignore”. “We believe
-                crypto-based digital assets could form an entirely new asset
-                class,” analysts wrote. “Bitcoin is important with a market
-                value of ~$900bn, but the digital asset ecosystem is so much
-                more.
+                too large to ignore”. “We believe crypto-based digital assets
+                could form an entirely new asset class,” analysts wrote.
+                “Bitcoin is important with a market value of ~$900bn, but the
+                digital asset ecosystem is so much more. “Our view is that there
+                could be more opportunity than skeptics expect.
               </ul>
             </li>
           </p>

@@ -1,6 +1,7 @@
 .recentSection {
   width: 25%;
   float: left;
+
   /* padding: 2rempx; */
 
   max-height: 120rem;
@@ -8,11 +9,10 @@
 }
 
 .recentsTitle {
+  color: #59bfff;
   font-size: 32px;
   padding: 10px;
-padding-left: 10px;
-border-top: 6px solid black;
-border-bottom: 2px solid black;
+  padding-left: 10px;
+  border-top: 6px solid black;
+  border-bottom: 2px solid black;
 }
-
-

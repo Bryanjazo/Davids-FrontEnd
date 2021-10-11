@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import logo from '../images/logo.png'
+import logo from "../images/logo.png";
 import Hamburger from "hamburger-react";
 export default function NavBar() {
   const [hamburger, setHamburger] = useState("hamburger");
@@ -21,21 +21,38 @@ export default function NavBar() {
 
   return (
     <header className="header">
-      <img width="350px" height="auto" class="logo" className="logo-img" src={logo}  alt="logo"  />
+      <img
+        width="350px"
+        height="auto"
+        class="logo"
+        className="logo-img"
+        src={logo}
+        alt="logo"
+      />
       {/* <nav className="navbar"> */}
-          <div class="topnav">
-            <a href="#" className="nav-link"><i class="fas fa-bars"></i></a>
-            <a href="#" className="nav-link">NEWSLETTER</a>
-            <a href="#" className="nav-link">PODCASTS</a>
-            <div className="topnav-right" >
-              <a href="#" className="nav-link">EVENTS</a>
-              <a href="#" className="nav-link">WEBINARS</a>
-              <button onclick="" className="button">WE'RE HIRING!</button>
-            </div>
-          </div>
-        <div className={hamburger} onClick={handleClick}>
-          <Hamburger toggled={isHamburger} />
+      <div class="topnav">
+        <a href="#" className="nav-link">
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" className="nav-link">
+          NEWSLETTER
+        </a>
+        <a href="#" className="nav-link">
+          PODCASTS
+        </a>
+        <div className="topnav-right">
+          <a href="#" className="nav-link">
+            EVENTS
+          </a>
+          <a href="#" className="nav-link">
+            WEBINARS
+          </a>
+          <i class="fas fa-search fa-lg search-icon"></i>
         </div>
+      </div>
+      <div className={hamburger} onClick={handleClick}>
+        <Hamburger toggled={isHamburger} />
+      </div>
       {/* </nav> */}
     </header>
   );

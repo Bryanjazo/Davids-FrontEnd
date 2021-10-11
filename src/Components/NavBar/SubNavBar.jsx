@@ -7,15 +7,35 @@ export default function SubNavBar() {
   return (
     <div>
       <div className="SubNav-container">
-        <p className="subNav-p">Asset Manager</p>
-        <p className="subNav-p">DeFi</p>
-        <p className="subNav-p">Education</p>
-        <p className="subNav-p">Macro</p>
-        <p className="subNav-p">Markets</p>
-        <p className="subNav-p">Financial Services</p>
-        <p className="subNav-p">Op-Od</p>
-        <p className="subNav-p">Profiles</p>
-        <p className="subNav-p">Regulations</p>
+        <div className="SubNav-container-two">
+          <a href="#" className="sub-link">
+            Asset Manager
+          </a>
+          <a href="#" className="sub-link">
+            DeFi
+          </a>
+          <a href="#" className="sub-link">
+            Education
+          </a>
+          <a href="#" className="sub-link">
+            Macro
+          </a>
+          <a href="#" className="sub-link">
+            Markets
+          </a>
+          <a href="#" className="sub-link">
+            Financial Services
+          </a>
+          <a href="#" className="sub-link">
+            Op-Od
+          </a>
+          <a href="#" className="sub-link">
+            Profiles
+          </a>
+          <a href="#" className="sub-link">
+            Regulations
+          </a>
+        </div>
       </div>
 
       <div className="ticker-div">
