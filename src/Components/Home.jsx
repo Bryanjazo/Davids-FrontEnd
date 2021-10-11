@@ -10,14 +10,12 @@ import Features from "./NewsContainer/Features";
 import Recents from "./NewsContainer/Recents";
 import "./Home.css";
 
-
 import Lifestyle from "./MidSection/LifestyleContainer/Lifestyle";
 import BlockChain from "./MidSection/BlockChainContainer/BlockChain";
 import LearnCrypto from "./MidSection/LearnCrypto/LearnCrypto";
 import WritersFeed from "./MidSection/WritersFeed/WritersFeed";
 import Footer from "./Footer/Footer";
 import NavBar from "./NavBar/NavBar";
-
 
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
@@ -30,31 +28,27 @@ export default function Home() {
   }, []);
 
   return (
-<div> 
+    <div>
+      <div className="home">
+        <div className="split">
+          <div className="newsSplit">
+            <NewsArticles news={newsArticles} />
 
+            <Features />
 
-    <div className="home">
-      <CryptoTickers crypto={cryptos} />
+            <Recents />
+          </div>
 
-      <div className="split">
+          <div className="split2">
+            <Lifestyle />
+            <BlockChain />
+            <LearnCrypto />
+            <WritersFeed />
+          </div>
 
-        <div className="newsSplit">
-        <NewsArticles news={newsArticles} />
-
-        <Features/>
-        <Recents/>
+          <Teamheader />
         </div>
-
-        <div className="split2">
-          <Lifestyle />
-          <BlockChain />
-          <LearnCrypto />
-          <WritersFeed />
-        </div>
-
-        <Teamheader />
       </div>
-    </div>
     </div>
   );
 }

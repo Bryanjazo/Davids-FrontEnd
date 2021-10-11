@@ -5,12 +5,14 @@ import NavBar from "./Components/NavBar/NavBar";
 import Home from "./Components/Home";
 import { Rotate } from "hamburger-react";
 import Footer from "./Components/Footer/Footer";
+import SubNavBar from "./Components/NavBar/SubNavBar";
 function App() {
   return (
     <div>
       <Router>
         <div className="App">
           <NavBar />
+          <SubNavBar />
           <Switch>
             <Route to="/">
               <Home />

@@ -21,18 +21,13 @@ export default function TeamCard() {
           </div>
           <share>
             <div className="socialContainer">
-              <div className="socialItems">
-                <i class="fab fa-facebook fa-2x social"></i>
-              </div>
-              <div className="socialItems">
-                <i class="fab fa-linkedin fa-2x social"></i>
-              </div>
-              <div className="socialItems">
-                <i class="fab fa-instagram fa-2x social"></i>
-              </div>
-              <div className="socialItems">
-                <i class="fab fa-youtube fa-2x social"></i>
-              </div>
+              <i class="fab fa-facebook fa-2x social"></i>
+
+              <i class="fab fa-linkedin fa-2x social"></i>
+
+              <i class="fab fa-instagram fa-2x social"></i>
+
+              <i class="fab fa-youtube fa-2x social"></i>
             </div>
           </share>
         </div>

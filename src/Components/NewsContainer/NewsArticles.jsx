@@ -1,9 +1,11 @@
 import React from "react";
 import ImgMediaCard from "../Card/Card";
 import HeadlineCard from "../Card/HeadlineCard";
-import './NewsArticle.css'
-
+import "./NewsArticle.css";
+import { useSelector } from "react-redux";
+import CryptoTickers from "../Crypto/CryptoTickers";
 export default function NewsArticles(news) {
+  const { cryptos, newsArticles } = useSelector((state) => state.crypto);
   // const cardOne = news.news.map((first) =>
   //   first.first.results
   //     .filter((data) => data.image_url)
@@ -21,7 +23,7 @@ export default function NewsArticles(news) {
       <h3 className="headline">Headlines</h3>
       <div className="cardNews">
         <div className="cardNews1"></div>
-   
+
         <div className="CardNews1">
           <HeadlineCard />
         </div>
