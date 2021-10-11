@@ -2,47 +2,61 @@
   /* max-width: 225px; */
   margin: 0 auto;
   margin-top: 1vh;
-  margin-left: .5vh;
-  margin-right: .5vh;
+  margin-left: 0.5vh;
+  margin-right: 0.5vh;
 }
 
-.card{
-    width: 260px;
-    height: 260px;
-    background-color: white;
-    text-align: center;
-    /* border-radius: 12px; */
-    border: 1px solid #BACDD8;
+.TeamSection {
+  margin-left: 0;
+  padding-left: 0;
+}
+.card {
+  width: 400px;
+  height: 350px;
+  background-color: white;
+  text-align: center;
+  /* border-radius: 12px; */
+  border: 1px solid #bacdd8;
 }
 
 #c-img {
-    width: 150px;
-    border-radius: 12px;
-    height: 150px;
-    object-fit: cover;
+  width: 150px;
+
+  border-radius: 12px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 16px;
-    margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 5px;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    color: #7F8C9B;
-    line-height: 150%;
-    margin-top: 1px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+  margin-top: 1px;
 }
 
 #share {
-    margin-left: 4.5px;
-    margin-right: 4.5px;
+  margin-left: 4.5px;
+  margin-right: 4.5px;
+}
+.socialIcons {
+  display: flex;
+  text-align: center;
+}
+
+.social {
+  color: #59bfff;
 }
 
 .card:hover {
-    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
 }
