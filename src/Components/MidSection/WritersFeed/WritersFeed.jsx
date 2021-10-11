@@ -26,7 +26,9 @@ export default function WritersFeed() {
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
-            <p className="writers-p">Lectus Magna</p>
+            <b>
+              <p className="writers-p">Lectus Magna</p>
+            </b>
           </div>
           <div className="writers-paragraph">
             <p className="writers-p">April 15, 2021</p>
@@ -39,7 +41,9 @@ export default function WritersFeed() {
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
-            <p className="writers-p">Lacus Vel</p>
+            <b>
+              <p className="writers-p">Lacus Vel</p>
+            </b>
           </div>
           <div className="writers-paragraph">
             <p className="writers-p">April 10, 2021</p>
@@ -52,7 +56,9 @@ export default function WritersFeed() {
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
-            <p className="writers-p">Holly Moore</p>
+            <b>
+              <p className="writers-p">Holly Moore</p>
+            </b>
           </div>
           <div className="writers-paragraph">
             <p className="writers-p">April 7, 2021</p>
@@ -65,7 +71,9 @@ export default function WritersFeed() {
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
-            <p className="writers-p">Eget Velit</p>
+            <b>
+              <p className="writers-p">Eget Velit</p>
+            </b>
           </div>
           <div className="writers-paragraph">
             <p className="writers-p">April 5, 2021</p>
@@ -78,7 +86,9 @@ export default function WritersFeed() {
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
-            <p className="writers-p">Aliquet Sagittis</p>
+            <b>
+              <p className="writers-p">Aliquet Sagittis</p>
+            </b>
           </div>
           <div className="writers-paragraph">
             <p className="writers-p">April 3, 2021</p>
@@ -91,7 +101,9 @@ export default function WritersFeed() {
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
-            <p className="writers-p">Purus Ut</p>
+            <b>
+              <p className="writers-p">Purus Ut</p>
+            </b>
           </div>
           <div className="writers-paragraph">
             <p className="writers-p">April 1, 2021</p>
@@ -104,7 +116,9 @@ export default function WritersFeed() {
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
-            <p className="writers-p">Id Consectetur</p>
+            <b>
+              <p className="writers-p">Id Consectetur</p>
+            </b>
           </div>
           <div className="writers-paragraph">
             <p className="writers-p">March 31, 2021</p>
