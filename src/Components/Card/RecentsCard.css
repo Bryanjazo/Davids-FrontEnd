@@ -6,17 +6,20 @@
   padding-top: 2rem;
 }
 .date {
-  font-size: 12px;
-  color: blue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  color: #219bc0;
 }
 
 .category {
-  font-size: 12px;
-  color: blue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  color: #219bc0;
 }
 
 .author {
-  font-size: 12px;
-  color: blue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  color: #219bc0;
   padding-right: 8px;
 }

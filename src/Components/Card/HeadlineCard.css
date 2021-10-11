@@ -3,6 +3,7 @@
   height: auto;
   width: auto;
 }
+
 .sub-header {
   font-family: "Times New Roman", Times, serif;
   display: flex;
@@ -39,7 +40,6 @@
   line-height: 4vh;
 }
 
-
-.card-container{
+.card-container {
   max-height: 120rem;
 }

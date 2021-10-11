@@ -1,6 +1,5 @@
 .writers-container {
   padding-top: 40px;
-  padding-left: 25px;
 }
 
 .writers-Header {
@@ -15,8 +14,9 @@
 }
 
 .writers-p {
+  font-family: "Times New Roman", Times, serif;
   color: #59bfff;
-  font-size: 11.5px;
+  font-size: 1.39rem;
 }
 
 .recentsTitleWriters {
