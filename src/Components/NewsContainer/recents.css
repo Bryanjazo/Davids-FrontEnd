@@ -2,7 +2,9 @@
   width: 25%;
   float: left;
   /* padding: 2rempx; */
-  height: 1200px;
+
+  max-height: 120rem;
+  overflow: scroll;
 }
 
 .recentsTitle {
