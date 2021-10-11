@@ -38,3 +38,8 @@
   font-size: large;
   line-height: 4vh;
 }
+
+
+.card-container{
+  max-height: 120rem;
+}

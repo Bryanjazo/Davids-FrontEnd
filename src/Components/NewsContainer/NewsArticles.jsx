@@ -1,7 +1,7 @@
 import React from "react";
 import ImgMediaCard from "../Card/Card";
 import HeadlineCard from "../Card/HeadlineCard";
-import styles from "./NewsArticle.css";
+import './NewsArticle.css'
 
 export default function NewsArticles(news) {
   // const cardOne = news.news.map((first) =>
@@ -21,7 +21,7 @@ export default function NewsArticles(news) {
       <h3 className="headline">Headlines</h3>
       <div className="cardNews">
         <div className="cardNews1"></div>
-        <div></div>
+   
         <div className="CardNews1">
           <HeadlineCard />
         </div>

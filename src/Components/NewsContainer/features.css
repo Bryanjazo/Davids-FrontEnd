@@ -5,26 +5,26 @@
 }
 
 .featuresSection{
-    
     width: 45%;
     float: left;
     padding-right: 10px;
-    height: 75rem
- 
+    height: 75rem;
+    padding-left: 10px;
 } 
 
 .featureTitle{
- font-size: 14px;
+ font-size: 32px;
  padding: 10px;
- border-top: 4px solid black;
+ margin-right: 10px;
+ border-top: 6px solid black;
  border-bottom: 2px solid black;
 }
 
-.featuresSection {
-    padding-right: 10px;
-    padding-left: 10px;
-    max-height: 120rem;
-    overflow: scroll;
+
+.hlcard{
+  max-height: 115rem;
+  overflow: scroll;
+  padding-right: 10px;
 }
 
 /* ---------------------- show more ---------------------- */

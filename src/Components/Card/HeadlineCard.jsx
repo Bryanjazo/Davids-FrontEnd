@@ -4,7 +4,7 @@ import "./HeadlineCard.css";
 
 export default function HeadlineCard() {
   return (
-    <div>
+    <div className="card-container">
       <div className="hl-card">
         <div className="header">
           <h1>
