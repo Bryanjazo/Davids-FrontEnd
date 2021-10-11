@@ -11,6 +11,7 @@
 }
 .header {
   font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
   padding-bottom: 20px;
 }
 .hl-card {
@@ -41,5 +42,5 @@
 }
 
 .card-container {
-  max-height: 120rem;
+  max-height: 200rem;
 }
