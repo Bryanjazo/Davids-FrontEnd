@@ -1,5 +1,5 @@
 import React from "react";
-import LifeStyleText from "../../LifestyleContainer/LifeStyleText";
+import LifeStyleText from "../LifestyleContainer/LifeStyleText";
 import "./WritersFeed.css";
 export default function WritersFeed() {
   return (
