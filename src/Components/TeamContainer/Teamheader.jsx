@@ -1,5 +1,6 @@
 import React from "react";
 import TeamConatiner from "./TeamConatiner";
+
 import "./TeamHeader.css";
 export default function Teamheader() {
   return (

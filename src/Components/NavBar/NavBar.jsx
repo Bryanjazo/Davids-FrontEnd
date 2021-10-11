@@ -24,12 +24,13 @@ export default function NavBar() {
       <img width="350px" height="auto" class="logo" className="logo-img" src={logo}  alt="logo"  />
       {/* <nav className="navbar"> */}
           <div class="topnav">
+            <a href="#" className="nav-link"><i class="fas fa-bars"></i></a>
             <a href="#" className="nav-link">NEWSLETTER</a>
             <a href="#" className="nav-link">PODCASTS</a>
             <div className="topnav-right" >
               <a href="#" className="nav-link">EVENTS</a>
               <a href="#" className="nav-link">WEBINARS</a>
-              <button href="#" className="nav-link">WE'RE HIRING!</button>
+              <button onclick="" className="button">WE'RE HIRING!</button>
             </div>
           </div>
         <div className={hamburger} onClick={handleClick}>
