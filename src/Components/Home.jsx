@@ -37,10 +37,13 @@ export default function Home() {
       <CryptoTickers crypto={cryptos} />
 
       <div className="split">
+
+        <div className="newsSplit">
         <NewsArticles news={newsArticles} />
 
         <Features/>
         <Recents/>
+        </div>
 
         <div className="split2">
           <Lifestyle />
