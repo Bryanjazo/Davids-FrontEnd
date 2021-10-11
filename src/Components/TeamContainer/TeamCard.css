@@ -1,0 +1,48 @@
+#card-container {
+  /* max-width: 225px; */
+  margin: 0 auto;
+  margin-top: 1vh;
+  margin-left: .5vh;
+  margin-right: .5vh;
+}
+
+.card{
+    width: 260px;
+    height: 260px;
+    background-color: white;
+    text-align: center;
+    /* border-radius: 12px; */
+    border: 1px solid #BACDD8;
+}
+
+#c-img {
+    width: 150px;
+    border-radius: 12px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #7F8C9B;
+    line-height: 150%;
+    margin-top: 1px;
+}
+
+#share {
+    margin-left: 4.5px;
+    margin-right: 4.5px;
+}
+
+.card:hover {
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+}

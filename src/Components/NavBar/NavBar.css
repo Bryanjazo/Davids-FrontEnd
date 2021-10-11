@@ -10,6 +10,10 @@
   background-color: #000;
 }
 
+.navbar button:hover {
+  background-color: #000;
+}
+
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
@@ -43,7 +47,7 @@
   background-color: #120B2B;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

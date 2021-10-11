@@ -9,11 +9,16 @@ import HeadlineCard from "./Card/HeadlineCard";
 import Features from "./NewsContainer/Features";
 import Recents from "./NewsContainer/Recents";
 import "./Home.css";
-import Lifestyle from "./LifestyleContainer/Lifestyle";
-import BlockChain from "./BlockChainContainer/BlockChain";
-import LearnCrypto from "./LearnCrypto/LearnCrypto";
-import WritersFeed from "./WritersFeed/WritersFeed";
+
+
+import Lifestyle from "./MidSection/LifestyleContainer/Lifestyle";
+import BlockChain from "./MidSection/BlockChainContainer/BlockChain";
+import LearnCrypto from "./MidSection/LearnCrypto/LearnCrypto";
+import WritersFeed from "./MidSection/WritersFeed/WritersFeed";
 import Footer from "./Footer/Footer";
+import NavBar from "./NavBar/NavBar";
+
+
 export default function Home() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
 
@@ -25,20 +30,28 @@ export default function Home() {
   }, []);
 
   return (
+<div> 
+
+
     <div className="home">
       <CryptoTickers crypto={cryptos} />
 
       <div className="split">
         <NewsArticles news={newsArticles} />
 
-        <Features />
-        <Recents />
-        <Lifestyle />
-        <BlockChain />
-        <LearnCrypto />
-        <WritersFeed />
+        <Features/>
+        <Recents/>
+
+        <div className="split2">
+          <Lifestyle />
+          <BlockChain />
+          <LearnCrypto />
+          <WritersFeed />
+        </div>
+
         <Teamheader />
       </div>
+    </div>
     </div>
   );
 }
