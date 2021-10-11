@@ -1,14 +1,16 @@
 .cardNews{
     padding-left: 1rem;
     padding-top: 2rem;
+    max-height: 105rem;
+    overflow: scroll;
 }
 
 .headline{
  padding-left: 1rem;
- font-size: 14px;
+ font-size: 32px;
  padding: 10px;
  padding-right: 10px;
- border-top: 4px solid black;
+ border-top: 6px solid black;
  border-bottom: 2px solid black;
 }
 
@@ -17,6 +19,9 @@
     width: 28%;
     padding-right: 10px;
     /* height: 75rem; */
+   
+}
+
+.CardNews1{
     max-height: 120rem;
-    overflow: scroll;
 }

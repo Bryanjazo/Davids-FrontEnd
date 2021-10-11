@@ -3,8 +3,14 @@
   padding-left: 60px;
 }
 
-.lifeStyle-Header {
-  padding-bottom: 7px;
+.lifeStyleHeader {
+  
+  font-size: 32px;
+  padding: 10px;
+  padding-right: 10px;
+  margin-right: 150px;
+  border-top: 6px solid black;
+  border-bottom: 2px solid black;
 }
 
 .Date {
@@ -20,8 +26,7 @@
 
 .lifeStyleContainer {
   font-size: 14px;
-  padding: 10px;
-
-  border-top: 4px solid black;
-  border-bottom: 2px solid black;
+  float: left;
+  /* width: 28%; */
+  padding-right: 10px;
 }
