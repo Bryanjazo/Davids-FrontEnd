@@ -1,5 +1,5 @@
 import React from "react";
-import "./TeamContainer.css"
+import "./TeamContainer.css";
 import TeamCard from "./TeamCard";
 
 export default function TeamConatiner() {

@@ -8,8 +8,6 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div>
-
-   
       <Router>
         <div className="App">
           <NavBar />
@@ -20,7 +18,8 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }
