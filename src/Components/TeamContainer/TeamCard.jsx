@@ -20,7 +20,7 @@ export default function TeamCard() {
             <p>Position</p>
           </div>
           <share>
-            <div>
+            <div className="socialContainer">
               <div className="socialItems">
                 <i class="fab fa-facebook fa-2x social"></i>
               </div>
