@@ -11,7 +11,11 @@ import {
   Column,
   FooterLink,
   Heading,
+  HeadingNewsLetter,
+  Column2,
+  Button
 } from "./FooterStyles";
+import { ButtonGroup } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -73,11 +77,21 @@ export default function Footer() {
               </i>
             </FooterLink>
           </Column>
-          <Column>
-          <Heading className="newsletter">SIGN UP FOR NEWSLETTER</Heading>
-          </Column>
+          
         </Row>
+       
       </Container>
+      <Column2>
+      <HeadingNewsLetter>SIGN UP FOR NEWSLETTER
+      
+          </HeadingNewsLetter>
+
+      </Column2>
+      <Button><div><button><h1>SUBSCRIBE</h1>
+          </button></div></Button>
+      
     </Box>
+   
+
   );
 }

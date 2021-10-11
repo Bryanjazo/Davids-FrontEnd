@@ -56,3 +56,28 @@ color: #fff;
 margin-bottom: 40px;
 font-weight: bold;
 `;
+
+
+export const HeadingNewsLetter = styled.p`
+font-size: 20px;
+color: #fff;
+margin-bottom: 40px;
+font-weight: bold;
+`;
+
+export const Column2 = styled.div`
+display: flex;
+flex-direction: column;
+text-align: right;
+margin-right: 60px;
+margin-bottom: 40px;
+`;
+
+
+export const Button = styled.button`
+display: flex;
+flex-direction: column;
+align-content: right;
+margin-right: 60px;
+margin-bottom: 40px;
+`;
