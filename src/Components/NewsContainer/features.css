@@ -23,6 +23,8 @@
 .featuresSection {
     padding-right: 10px;
     padding-left: 10px;
+    max-height: 120rem;
+    overflow: scroll;
 }
 
 /* ---------------------- show more ---------------------- */
