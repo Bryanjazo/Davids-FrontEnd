@@ -16,5 +16,7 @@
     float: left;
     width: 28%;
     padding-right: 10px;
-    height: 75rem;
+    /* height: 75rem; */
+    max-height: 120rem;
+    overflow: scroll;
 }
