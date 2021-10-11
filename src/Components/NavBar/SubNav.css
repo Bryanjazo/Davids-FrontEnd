@@ -1,3 +1,11 @@
 .SubNav-container {
-  display: flex;
+  text-align: center;
+  padding: 13px;
+}
+
+.sub-link {
+  padding: 65px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
 }

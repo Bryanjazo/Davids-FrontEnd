@@ -13,7 +13,9 @@
   overflow: hidden;
   overflow-x: scroll;
   height: 1vh;
+  border-top: 5px solid #e2e8f0;
   border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 25px;
 }
 
 .Crypto-Img {
@@ -81,7 +83,7 @@
 }
 .cryptoText {
   font-family: "Times New Roman", Times, serif;
-  font-size: 11px;
+  font-size: 12px;
   padding-right: 5px;
 }
 .scroll {
@@ -95,13 +97,13 @@
 .cryptoName {
   font-family: "Times New Roman", Times, serif;
   padding-right: 5px;
-  font-size: 11px;
+  font-size: 12px;
 }
 .cryptoTextPrice {
   font-family: "Times New Roman", Times, serif;
   padding-right: 3px;
   font-weight: 100;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .hmove {

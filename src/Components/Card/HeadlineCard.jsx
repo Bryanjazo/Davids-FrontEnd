@@ -5,7 +5,7 @@ import "./HeadlineCard.css";
 export default function HeadlineCard() {
   return (
     <div className="card-container">
-      <div className="hl-card">
+      <div className="hl-card-headline">
         <div className="header">
           <h1>
             {" "}
@@ -28,7 +28,7 @@ export default function HeadlineCard() {
           <img src={test} alt="" id="img" />
         </div>
       </div>
-      <div className="hl-card">
+      <div className="hl-card-headline">
         <div className="header">
           <h1>
             {" "}
@@ -51,7 +51,7 @@ export default function HeadlineCard() {
           <img src={test} alt="" id="img" />
         </div>
       </div>
-      <div className="hl-card">
+      <div className="hl-card-headline">
         <div className="header">
           <h1>
             {" "}

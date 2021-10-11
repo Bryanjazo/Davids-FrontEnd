@@ -1,27 +1,28 @@
 #img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
-.featuresSection{
-    width: 45%;
-    float: left;
-    padding-right: 10px;
-    height: 75rem;
-    padding-left: 10px;
-} 
-
-.featureTitle{
- font-size: 32px;
- padding: 10px;
- margin-right: 10px;
- border-top: 6px solid black;
- border-bottom: 2px solid black;
+.featuresSection {
+  width: 45%;
+  float: left;
+  padding-right: 35px;
+  height: 75rem;
+  padding-left: 35px;
 }
 
-
-.hlcard{
+.featureTitle {
+  font-size: 32px;
+  padding: 10px;
+  margin-right: 10px;
+  border-top: 6px solid black;
+  border-bottom: 2px solid black;
+}
+.hl-card {
+  padding-top: 5rem;
+}
+.hlcard {
   max-height: 115rem;
   overflow: scroll;
   padding-right: 10px;
@@ -29,51 +30,51 @@
 
 /* ---------------------- show more ---------------------- */
 
-.container { 
-    position: relative; 
-    height: auto;
-    border-top: 0;
-  }
-  
-  [type="checkbox"] {
-    position: absolute;
-    left:  -9999px; 
-  }
-  
-  label {
-    background: #e4e3df;
-    display: block;
-    width: 100%;
-    height: 50px;
-    cursor: pointer;
-    position: relative;
-  }
+.container {
+  position: relative;
+  height: auto;
+  border-top: 0;
+}
 
-  label:before,
+[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+label {
+  background: #e4e3df;
+  display: block;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+label:before,
 label:after {
   position: absolute;
 }
 
 label:before {
-  content: 'More';
+  content: "More";
   left: 10px;
 }
 
 label:after {
-  content: '⇣●';
+  content: "⇣●";
   right: 10px;
-  -webkit-animation: sudo .85s linear infinite alternate;
-          animation: sudo .85s linear infinite alternate;
+  -webkit-animation: sudo 0.85s linear infinite alternate;
+  animation: sudo 0.85s linear infinite alternate;
 }
 
-@keyframes sudo { 
-  from { 
-    -webkit-transform: translateY(-2px); 
-            transform: translateY(-2px); 
+@keyframes sudo {
+  from {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
-  to { 
-    -webkit-transform: translateY(2px); 
-            transform: translateY(2px); 
+  to {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
   }
 }
 
@@ -82,14 +83,12 @@ input[type="checkbox"] ~ ul {
   display: none;
 }
 
-
-
 /* CHECKED STATE STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 [type="checkbox"]:checked ~ ul {
   display: block;
-} 
+}
 
 [type="checkbox"]:checked + label {
   /**
@@ -97,16 +96,16 @@ input[type="checkbox"] ~ ul {
    * during the "checked" state 
    * we have to change its type of positioning
    */
-  position: absolute; 
+  position: absolute;
   top: 100%;
 }
 
 [type="checkbox"]:checked + label:before {
-  content: 'Less';
+  content: "Less";
 }
 
 [type="checkbox"]:checked + label:after {
- content: '⇡●'; 
+  content: "⇡●";
 }
 
 ul li:last-child {
