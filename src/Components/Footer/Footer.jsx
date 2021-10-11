@@ -2,6 +2,8 @@ import React from "react";
 
 import "./footer.css";
 
+import logo from "../images/smallLogo.png";
+
 import {
   Box,
   Container,
@@ -9,12 +11,24 @@ import {
   Column,
   FooterLink,
   Heading,
+  HeadingNewsLetter,
+  Column2,
+  Button
 } from "./FooterStyles";
+import { ButtonGroup } from "@mui/material";
 
 export default function Footer() {
   return (
     <Box>
-      <h1 style={{ color: "white" }}>Logo goes here</h1>
+    {/* <img width="350px" height="auto" class="small-logo-img" src="./images/smallLogo.png" alt="small-logo"> */}
+    <div> <img
+        width="30px"
+        height="auto"
+        class="small-logo"
+        className="small-logo-img"
+        src={logo}
+        alt="small-logo"
+      /></div>
       <h1
         style={{ color: "green", textAlign: "center", marginTop: "-50px" }}
       ></h1>
@@ -63,8 +77,21 @@ export default function Footer() {
               </i>
             </FooterLink>
           </Column>
+          
         </Row>
+       
       </Container>
+      <Column2>
+      <HeadingNewsLetter>SIGN UP FOR NEWSLETTER
+      
+          </HeadingNewsLetter>
+
+      </Column2>
+      <Button><div><button><h1>SUBSCRIBE</h1>
+          </button></div></Button>
+      
     </Box>
+   
+
   );
 }
