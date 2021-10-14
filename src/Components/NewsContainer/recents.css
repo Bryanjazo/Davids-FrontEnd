@@ -8,6 +8,18 @@
   overflow: scroll;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .recentSection {
+ 
+    width: 100%;
+    float: left;
+    overflow: scroll;
+  }
+
+ 
+}
+
 .recentsTitle {
   color: #59bfff;
   font-size: 32px;

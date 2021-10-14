@@ -27,3 +27,13 @@
 .CardNews1 {
   max-height: 120rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .headlineSection {
+ 
+    width: 100%;
+   
+  }
+
+ 
+}

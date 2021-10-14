@@ -12,6 +12,17 @@
   padding-left: 35px;
 }
 
+@media only screen and (max-width: 768px) {
+  .featuresSection {
+ 
+    width: 100%;
+   
+  }
+
+ 
+}
+
+
 .featureTitle {
   font-size: 32px;
   padding: 10px;

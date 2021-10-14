@@ -3,6 +3,20 @@
   padding-left: 30px;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .lifeStyleContainer,
+  .lifeStyleSection,
+  .lifeStyle-container,
+  .lifeStyleHeader{
+ 
+    width: 400px;
+    
+  }
+ 
+}
+
+
 .lifeStyleHeader {
   font-size: 32px;
   padding: 10px;
