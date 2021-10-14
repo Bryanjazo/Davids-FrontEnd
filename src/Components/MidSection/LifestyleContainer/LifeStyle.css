@@ -11,6 +11,7 @@
   .lifeStyleHeader{
  
     width: 400px;
+    padding-right: 0px;
     
   }
  
@@ -34,7 +35,7 @@
 .lifeStyleSection {
   width: 25%;
   float: left;
-  padding: 2rempx;
+  padding: 2rem;
 }
 
 .lifeStyleContainer {
