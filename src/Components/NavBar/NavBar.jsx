@@ -21,6 +21,7 @@ export default function NavBar() {
 
   return (
     <header className="header">
+    <div hidden>
       <img
         width="350px"
         height="auto"
@@ -30,6 +31,7 @@ export default function NavBar() {
         alt="logo"
       />
       {/* <nav className="navbar"> */}
+      </div>
       <div class="topnav">
         <a href="#" className="nav-link">
           <i class="fas fa-bars"></i>
