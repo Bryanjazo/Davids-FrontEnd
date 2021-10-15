@@ -9,3 +9,18 @@
   font-weight: 400;
   color: #475569;
 }
+
+
+@media only screen and (max-width: 768px) {
+
+  .SubNav-container{
+    text-align: justify;
+    height: fit-content;
+  }
+  .sub-link{
+ 
+    width: 100%;
+    
+  }
+ 
+}

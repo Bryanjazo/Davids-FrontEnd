@@ -90,7 +90,7 @@ export default function Footer() {
             </FooterLink>
           </Column>
           <Column>
-            <Heading>Adress</Heading>
+            <Heading>Address</Heading>
             <FooterLink href="#">
               <i class="fas fa-map-marker-alt">
                 <span style={{ marginLeft: "10px" }}>

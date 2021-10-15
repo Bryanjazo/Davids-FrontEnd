@@ -21,9 +21,8 @@ export default function Features() {
           </p>
         </div>
         <div className="img">
-          <ReactPlayer
-            width="100%"
-            height="60rem"
+          <ReactPlayer className='player'
+            
             url="https://www.youtube.com/watch?v=mKrLx4ex65w&feature=emb_title"
           />
         </div>

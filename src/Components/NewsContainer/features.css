@@ -12,6 +12,33 @@
   padding-left: 35px;
 }
 
+@media only screen and (max-width: 768px) {
+  .featuresSection {
+ 
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+   
+  }
+
+  .player{
+    width: 100%;
+    height: 600px;
+  }
+
+  .hl-card{
+    width: 100%;
+  }
+ 
+}
+
+.player{
+  width: 100%;
+  height: 60rem;
+  
+}
+
+
 .featureTitle {
   font-size: 32px;
   padding: 10px;
