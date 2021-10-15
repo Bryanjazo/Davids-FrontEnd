@@ -21,16 +21,16 @@ export default function NavBar() {
 
   return (
     <header className="header">
-    <div hidden>
-      <img
-        width="350px"
-        height="auto"
-        class="logo"
-        className="logo-img"
-        src={logo}
-        alt="logo"
-      />
-      {/* <nav className="navbar"> */}
+      <div hidden>
+        <img
+          width="350px"
+          height="auto"
+          class="logo"
+          className="logo-img"
+          src={logo}
+          alt="logo"
+        />
+        {/* <nav className="navbar"> */}
       </div>
       <div class="topnav">
         <a href="#" className="nav-link">
@@ -44,10 +44,10 @@ export default function NavBar() {
         </a>
         <div className="topnav-right">
           <a href="#" className="nav-link">
-            EVENTS
+            Blockchain
           </a>
           <a href="#" className="nav-link">
-            WEBINARS
+            Coin Swap
           </a>
           <i class="fas fa-search fa-lg search-icon"></i>
         </div>
