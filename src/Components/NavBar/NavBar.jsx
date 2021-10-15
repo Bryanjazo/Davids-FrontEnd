@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <header className="header">
-    <div hidden>
+    <div>
       <img
         width="350px"
         height="auto"
@@ -54,7 +54,7 @@ export default function NavBar() {
           <i class="fas fa-search fa-lg search-icon"></i>
         </div>
 
-        
+
       </div>
       {/* <div className={hamburger} onClick={handleClick}>
         <Hamburger toggled={isHamburger} />
