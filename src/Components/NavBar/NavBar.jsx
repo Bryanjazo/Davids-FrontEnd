@@ -6,6 +6,7 @@ export default function NavBar() {
   const [hamburger, setHamburger] = useState("hamburger");
   const [menu, setmenu] = useState("nav-menu");
   const [isHamburger, setIsHamburger] = useState(false);
+
   const handleClick = () => {
     setIsHamburger(!isHamburger);
     if (isHamburger === true) {
@@ -30,8 +31,9 @@ export default function NavBar() {
         src={logo}
         alt="logo"
       />
-      {/* <nav className="navbar"> */}
+     
       </div>
+       {/* <nav className="navbar"> */}
       <div class="topnav">
         <a href="#" className="nav-link">
           <i class="fas fa-bars"></i>
@@ -51,10 +53,12 @@ export default function NavBar() {
           </a>
           <i class="fas fa-search fa-lg search-icon"></i>
         </div>
+
+        
       </div>
-      <div className={hamburger} onClick={handleClick}>
+      {/* <div className={hamburger} onClick={handleClick}>
         <Hamburger toggled={isHamburger} />
-      </div>
+      </div> */}
       {/* </nav> */}
     </header>
   );

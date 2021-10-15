@@ -6,6 +6,9 @@ import Home from "./Components/Home";
 import { Rotate } from "hamburger-react";
 import Footer from "./Components/Footer/Footer";
 import SubNavBar from "./Components/NavBar/SubNavBar";
+import HamburgerMenu from "./Components/NavBar/HamburgerMenu";
+
+
 function App() {
   return (
     <div>
@@ -14,8 +17,11 @@ function App() {
           <NavBar />
           <SubNavBar />
           <Switch>
-            <Route to="/">
+            <Route path="/">
               <Home />
+            </Route>
+            <Route path="/example">
+              <HamburgerMenu/>
             </Route>
           </Switch>
         </div>
