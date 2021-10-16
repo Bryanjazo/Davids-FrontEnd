@@ -37,10 +37,10 @@ export default function HamburgerMenu() {
         </a>
         <div className="topnav-right">
           <a href="#" className="nav-link">
-            EVENTS
+            BLOCKCHAIN
           </a>
           <a href="#" className="nav-link">
-            WEBINARS
+            COIN SWAP
           </a>
           <i class="fas fa-search fa-lg search-icon"></i>
         </div>
@@ -48,31 +48,25 @@ export default function HamburgerMenu() {
       <div className="SubNav-container">
         <div className="SubNav-container-two">
           <a href="#" className="sub-link">
-            Asset Manager
+            Home
           </a>
           <a href="#" className="sub-link">
-            DeFi
+            Lifestyle
           </a>
           <a href="#" className="sub-link">
-            Education
+            Becoming A Patron
           </a>
           <a href="#" className="sub-link">
-            Macro
+            Raise Your Game
           </a>
           <a href="#" className="sub-link">
-            Markets
+           Schedule A Call With David
           </a>
           <a href="#" className="sub-link">
-            Financial Services
+            About David Gokhshtein
           </a>
           <a href="#" className="sub-link">
-            Op-Od
-          </a>
-          <a href="#" className="sub-link">
-            Profiles
-          </a>
-          <a href="#" className="sub-link">
-            Regulations
+            About Us
           </a>
         </div>
       </div>

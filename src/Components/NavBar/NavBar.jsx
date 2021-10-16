@@ -45,10 +45,10 @@ export default function NavBar() {
         </a>
         <div className="topnav-right">
           <a href="#" className="nav-link">
-            EVENTS
+            BLOCKCHAIN
           </a>
           <a href="#" className="nav-link">
-            WEBINARS
+            COIN SWAP
           </a>
           <i class="fas fa-search fa-lg search-icon"></i>
         </div>
