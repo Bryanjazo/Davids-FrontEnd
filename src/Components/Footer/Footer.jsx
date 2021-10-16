@@ -20,10 +20,14 @@ export default function Footer() {
   return (
     <Box>
       {/* <img width="350px" height="auto" class="small-logo-img" src="./images/smallLogo.png" alt="small-logo"> */}
-      <div>
+      
+      <h1
+        style={{ color: "green", textAlign: "center", marginTop: "-50px" }}
+      ></h1>
+       <div>
         {" "}
         <img
-          width="200px"
+          width="325rem"
           height="auto"
           class="small-logo"
           className="small-logo-img"
@@ -31,12 +35,13 @@ export default function Footer() {
           alt="small-logo"
         />
       </div>
-      <h1
-        style={{ color: "green", textAlign: "center", marginTop: "-50px" }}
-      ></h1>
       <Container>
+      
+
         <Row>
+        
           <Column>
+          
             <Heading>About Us</Heading>
             <FooterLink href="#">Aim</FooterLink>
             <FooterLink href="#">Vision</FooterLink>

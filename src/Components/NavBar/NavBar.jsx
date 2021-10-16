@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import logo from "../images/logo.png";
+
 import Hamburger from "./Hamburger";
+import {BlockChainPage} from "../MidSection/BlockChainContainer/BlockChainPage";
+
+import { Link } from "react-router-dom";
 // import Hamburger from "hamburger-react";
 
 export default function NavBar() {
@@ -44,9 +48,10 @@ export default function NavBar() {
           PODCASTS
         </a>
         <div className="topnav-right">
-          <a href="#" className="nav-link">
+          <a href='../MidSection/BlockChainContainer/BlockChainPage' className="nav-link">
             BLOCKCHAIN
           </a>
+          {/* <Link to="/BlockChainPage"> BLOCKCHAIN </Link> */}
           <a href="#" className="nav-link">
             COIN SWAP
           </a>
