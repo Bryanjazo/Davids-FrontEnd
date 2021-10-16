@@ -5,7 +5,7 @@ import CryptoTickers from "../Crypto/CryptoTickers";
 export default function SubNavBar() {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
   return (
-    <div>
+     <div>
       <div className="SubNav-container">
         <div className="SubNav-container-two">
           <a href="#" className="sub-link">

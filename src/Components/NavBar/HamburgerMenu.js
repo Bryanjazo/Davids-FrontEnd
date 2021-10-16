@@ -1,25 +1,138 @@
-import React from 'react'
 
+import React, { useState } from "react";
+// import "./NavBar.css";
+
+import Hamburger from "./Hamburger";
 
 
 export default function HamburgerMenu() {
+
+
+    const [hamburger, setHamburger] = useState("hamburger");
+    const [menu, setmenu] = useState("nav-menu");
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  
+    const handleClick = () => {
+      setHamburgerOpen(!hamburgerOpen);
+  
+      // if (isHamburger === true) {
+      //   setHamburger("hamburger");
+      //   setmenu("nav-menu");
+      // } else {
+      //   setHamburger("hamburger active");
+      //   setmenu("nav-menu active");
+      // }
+    };
+
+    console.log(hamburger, menu, hamburgerOpen);
+
     return (
         <div className="menu-ham-container">
-            <p>X SECTIONS</p>
-
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
-            <p>CATEGORIES</p>
-            <ul>
-
-            </ul>
-
-            
+          <div class="topnav">
+        <a href="#" className="nav-link">
+          NEWSLETTER
+        </a>
+        <a href="#" className="nav-link">
+          PODCASTS
+        </a>
+        <div className="topnav-right">
+          <a href="#" className="nav-link">
+            EVENTS
+          </a>
+          <a href="#" className="nav-link">
+            WEBINARS
+          </a>
+          <i class="fas fa-search fa-lg search-icon"></i>
         </div>
+
+      <div className="SubNav-container">
+        <div className="SubNav-container-two">
+          <a href="#" className="sub-link">
+            Asset Manager
+          </a>
+          <a href="#" className="sub-link">
+            DeFi
+          </a>
+          <a href="#" className="sub-link">
+            Education
+          </a>
+          <a href="#" className="sub-link">
+            Macro
+          </a>
+          <a href="#" className="sub-link">
+            Markets
+          </a>
+          <a href="#" className="sub-link">
+            Financial Services
+          </a>
+          <a href="#" className="sub-link">
+            Op-Od
+          </a>
+          <a href="#" className="sub-link">
+            Profiles
+          </a>
+          <a href="#" className="sub-link">
+            Regulations
+          </a>
+        </div>
+      </div>
+
+
+      </div>
+      <div className="hamburger" onClick={handleClick}>
+        <Hamburger isOpen={hamburgerOpen} />
+      </div>
+            
+
+
+         <style jsx>{`
+      .topnav{
+                    width: 100%;
+                    height: 50px;
+                }
+                
+                
+                .topnav a{
+                    display:flex;
+                    flex-wrap: wrap;
+                    float: right;
+                    margin: 0px;
+                    padding: 0px;
+                    overflow: hidden;
+                }
+                .nav-link{
+                    list-style-type: none;
+                    padding-right: 10px;
+                }
+          
+                .hamburger{
+                   
+                    z-index: 6;
+                } 
+                @media (max-width: 767px){
+                  
+                    .hamburger{
+                        display:fixed;
+                        padding-top: 10px;
+                        margin-left: 10px;
+                        z-index: 6;
+                    }
+                
+                   
+                    .topnav{
+                        display: ${hamburgerOpen ? 'inline' : 'none'};
+                        background-color: white;
+                        height: 90%;
+                        width: 80%;
+                        margin-top: 50px;
+                        position: fixed;
+                        
+                    }
+                }
+                
+               
+                
+            `}</style>
+            </div>
     )
 }

@@ -17,12 +17,13 @@ function App() {
           <NavBar />
           <SubNavBar />
           <Switch>
-            <Route path="/">
-              <Home />
-            </Route>
             <Route path="/example">
               <HamburgerMenu/>
             </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+           
           </Switch>
         </div>
       </Router>
