@@ -3,7 +3,9 @@
   background-color: white;
   overflow: auto;
 
-  padding: 40px;
+
+  padding: 35px;
+
 }
 
 .navbar a:hover {
@@ -32,11 +34,17 @@
 
 .nav-link {
   padding: 5px;
+
+
 }
 
-/* .topnav-right {
+.topnav-right {
   float: right;
-} */
+}
+
+.topnav-left {
+  float: left;
+}
 
 .logo-img {
   margin: 0 auto;
@@ -209,6 +217,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  float: left;
 }
 
 /* .hamburger {
@@ -229,6 +238,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav-item {
@@ -281,7 +291,7 @@
     left: calc((100% - 195px) / 2);
     z-index: 100000;
   }
-  /* .hamburger {
+  .hamburger {
     display: block;
     cursor: pointer;
   }
@@ -295,5 +305,5 @@
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  } */
+  }
 }
