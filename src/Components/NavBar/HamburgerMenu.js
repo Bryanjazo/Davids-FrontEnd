@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import "./hamburgerMenu.css";
+import './NavBar.css'
 
 import Hamburger from "./Hamburger";
 
