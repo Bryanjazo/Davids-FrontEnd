@@ -12,34 +12,30 @@ export default function NavBar() {
         <img class="logo" className="logo-img" src={logo} alt="logo" />
       </div>
 
-
       <div class="topnav">
-      <div className="topnav-left">
-        <a href="#" className="nav-link">
-          <i class="fas fa-search fa-lg search-icon"></i>
-        </a>
-
-        <a href="#" className="nav-link">
-          PODCASTS
-        </a>
-
+        <div className="topnav-left">
+          <a href="#" className="nav-link">
+            NEWSLETTER
+          </a>
+          <a href="#" className="nav-link">
+            PODCASTS
+          </a>
         </div>
         <div className="topnav-right">
           <a
             href="../MidSection/BlockChainContainer/BlockChainPage"
             className="nav-link"
-          >BLOCKCHAIN
+          >
+            BLOCKCHAIN
+            <i class="fas fa-search fa-lg search-icon"></i>
           </a>
+
           {/* <Link to="/BlockChainPage"> BLOCKCHAIN </Link> */}
           <a href="#" className="nav-link">
             COIN SWAP
           </a>
-          <i class="fas fa-search fa-lg search-icon"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
-
-      
     </header>
   );
 }

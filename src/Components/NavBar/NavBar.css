@@ -3,9 +3,7 @@
   background-color: white;
   overflow: auto;
 
-
   padding: 35px;
-
 }
 
 .navbar a:hover {
@@ -33,9 +31,7 @@
 }
 
 .nav-link {
-  padding: 5px;
-
-
+  padding: 10px;
 }
 
 .topnav-right {
@@ -238,7 +234,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .nav-item {
