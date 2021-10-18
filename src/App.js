@@ -8,7 +8,6 @@ import Footer from "./Components/Footer/Footer";
 import SubNavBar from "./Components/NavBar/SubNavBar";
 import HamburgerMenu from "./Components/NavBar/HamburgerMenu";
 
-
 function App() {
   return (
     <div>
@@ -20,8 +19,8 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
-            <Route path="/example">
-              <HamburgerMenu/>
+            <Route path="/home">
+              <HamburgerMenu />
             </Route>
           </Switch>
         </div>

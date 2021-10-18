@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ImgMediaCard from "../Card/Card";
 import HeadlineCard from "../Card/HeadlineCard";
 import "./NewsArticle.css";
@@ -6,18 +6,7 @@ import { useSelector } from "react-redux";
 import CryptoTickers from "../Crypto/CryptoTickers";
 export default function NewsArticles(news) {
   const { cryptos, newsArticles } = useSelector((state) => state.crypto);
-  // const cardOne = news.news.map((first) =>
-  //   first.first.results
-  //     .filter((data) => data.image_url)
-  //     .map((news) => <ImgMediaCard media={news} />)
-  // );
-  // const cardTwo = news.news.map((second) =>
-  //   second.second.results
-  //     .filter((data) => data.image_url)
-  //     .map((news) => <ImgMediaCard media={news} />)
-  // );
 
-  // news.news.map((first) =>first.first.results.filter((data) => data.image_url).map((news => news))
   return (
     <div className="headlineSection">
       <h3 className="headline">Headlines</h3>

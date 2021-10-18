@@ -4,7 +4,8 @@ import "./HeadlineCard.css";
 import TwoCoins from "../images/TwoCoins.png";
 import DarkBitcoin from "../images/DarkBitcoin.png";
 import ManCoin from "../images/ManCoin.png";
-export default function HeadlineCard() {
+export default function HeadlineCard(props) {
+  console.log(props);
   return (
     <div className="card-container">
       <div className="hl-card-headline">

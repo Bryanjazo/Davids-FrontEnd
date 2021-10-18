@@ -22,7 +22,6 @@ export default function NavBar() {
 
   return (
     <header className="header">
-<<<<<<< HEAD
       <div hidden>
         <img
           width="350px"
@@ -32,21 +31,8 @@ export default function NavBar() {
           src={logo}
           alt="logo"
         />
-        {/* <nav className="navbar"> */}
-=======
-    <div hidden>
-      <img
-        width="350px"
-        height="auto"
-        class="logo"
-        className="logo-img"
-        src={logo}
-        alt="logo"
-      />
-     
->>>>>>> origin/main
       </div>
-       {/* <nav className="navbar"> */}
+      {/* <nav className="navbar"> */}
       <div class="topnav">
         <a href="#" className="nav-link">
           <i class="fas fa-bars"></i>
@@ -66,8 +52,6 @@ export default function NavBar() {
           </a>
           <i class="fas fa-search fa-lg search-icon"></i>
         </div>
-
-        
       </div>
       {/* <div className={hamburger} onClick={handleClick}>
         <Hamburger toggled={isHamburger} />
