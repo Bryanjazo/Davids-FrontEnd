@@ -5,11 +5,11 @@ import "./blockChain.css";
 
 export default function BlockChain() {
   const [blockchain, setBlockchain] = useState([]);
-  useEffect(() => {
-    fetch("http://localHost:8080/api/v1/lifestyles")
-      .then((resp) => resp.json())
-      .then((data) => setBlockchain(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localHost:8080/api/v1/lifestyles")
+  //     .then((resp) => resp.json())
+  //     .then((data) => setBlockchain(data));
+  // }, []);
   return (
     <div className="recentSection">
       <h3 className="blockChainTitle">BLOCKCHAIN</h3>
@@ -20,5 +20,4 @@ export default function BlockChain() {
   );
 }
 
-
-// create a full page with this.. so when user clicks on the blockchain section 
+// create a full page with this.. so when user clicks on the blockchain section
