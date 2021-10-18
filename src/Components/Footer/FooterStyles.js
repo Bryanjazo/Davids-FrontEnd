@@ -8,6 +8,7 @@ export const Box = styled.div`
 
   @media (max-width: 1000px) {
     padding: 70px 30px;
+
   }
 `;
 
@@ -46,6 +47,10 @@ export const FooterLink = styled.a`
     color: #4200ff;
     transition: 200ms ease-in;
   }
+  @media (max-width: 1000px) {
+    font-size: 20px;
+    
+  }
 `;
 
 export const Heading = styled.p`
@@ -53,6 +58,12 @@ export const Heading = styled.p`
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
+
+ @media (max-width: 1000px) {
+    padding-top: 10px;
+    font-size: 28px;
+  }
+
 `;
 
 export const HeadingNewsLetter = styled.p`
