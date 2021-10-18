@@ -10,13 +10,32 @@
   color: #475569;
 }
 
+
+/* @media only screen and (max-width: 768px) {
+
+  .SubNav-container{
+
 @media only screen and (max-width: 768px) {
   .SubNav-container {
+
     text-align: justify;
     height: fit-content;
+    border-bottom: 2px solid black;
+    background-color: aqua;
   }
-  .sub-link {
+
+  /* .sub-link{
+ background-color:bisque;
     width: 100%;
     padding: 0%;
-  }
-}
+    
+  } */
+
+  /* .SubNav-container-two{
+    background-color:#475569;
+    width: 100%;
+    padding: 0%;
+  } */
+ 
+/* } */ 
+

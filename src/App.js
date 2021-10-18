@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import SubNavBar from "./Components/NavBar/SubNavBar";
 import HamburgerMenu from "./Components/NavBar/HamburgerMenu";
 
+
 function App() {
   return (
     <div>
@@ -16,9 +17,11 @@ function App() {
           <div className="mobile-nav-container">
             <HamburgerMenu />
           </div>
+
           <div className="desktop-container">
             <NavBar />
             <SubNavBar />
+
           </div>
 
           <Switch>
@@ -38,3 +41,14 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
