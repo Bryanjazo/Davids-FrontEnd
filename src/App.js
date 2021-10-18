@@ -14,15 +14,24 @@ function App() {
     <div>
       <Router>
         <div className="App">
-          <NavBar />
-          <SubNavBar />
+
+        <div className='mobile-nav-container'>
+        <HamburgerMenu/>
+          </div>
+          <div className='desktop-container'>
+            <NavBar />
+            <SubNavBar />
+          </div>
+
+         
           <Switch>
-            <Route path="/">
-              <Home />
-            </Route>
             <Route path="/example">
               <HamburgerMenu/>
             </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+           
           </Switch>
         </div>
       </Router>
