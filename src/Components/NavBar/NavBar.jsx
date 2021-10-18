@@ -47,6 +47,7 @@ export default function NavBar() {
         <a href="#" className="nav-link">
           PODCASTS
         </a>
+        
         <div className="topnav-right">
           <a href='../MidSection/BlockChainContainer/BlockChainPage' className="nav-link">
             BLOCKCHAIN
