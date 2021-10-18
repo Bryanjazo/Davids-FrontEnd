@@ -30,6 +30,7 @@ export default function NavBar() {
 
   return (
     <header className="header">
+
     <div className='logo-div'>
       <img
         class="logo"
@@ -49,11 +50,13 @@ export default function NavBar() {
         </a>
         
         <div className="topnav-right">
+
           <a href='../MidSection/BlockChainContainer/BlockChainPage' className="nav-link">
             BLOCKCHAIN
           </a>
           {/* <Link to="/BlockChainPage"> BLOCKCHAIN </Link> */}
           <a href="#" className="nav-link">
+
             COIN SWAP
           </a>
           <i class="fas fa-search fa-lg search-icon"></i>
