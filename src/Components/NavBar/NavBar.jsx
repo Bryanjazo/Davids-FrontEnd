@@ -6,7 +6,6 @@ export default function NavBar() {
   const [hamburger, setHamburger] = useState("hamburger");
   const [menu, setmenu] = useState("nav-menu");
   const [isHamburger, setIsHamburger] = useState(false);
-
   const handleClick = () => {
     setIsHamburger(!isHamburger);
     if (isHamburger === true) {
@@ -22,35 +21,36 @@ export default function NavBar() {
 
   return (
     <header className="header">
-      <div>
-        <img
-          width="350px"
-          height="auto"
-          class="logo"
-          className="logo-img"
-          src={logo}
-          alt="logo"
-        />
-      </div>
+      <img
+        width="350px"
+        height="auto"
+        class="logo"
+        className="logo-img"
+        src={logo}
+        alt="logo"
+      />
       {/* <nav className="navbar"> */}
       <div class="topnav">
         <a href="#" className="nav-link">
-          <i class="fas fa-search fa-lg search-icon"></i>
+          <i class="fas fa-bars"></i>
         </a>
-
+        <a href="#" className="nav-link">
+          NEWSLETTER
+        </a>
         <a href="#" className="nav-link">
           PODCASTS
         </a>
         <div className="topnav-right">
           <a href="#" className="nav-link">
-            VIDEOS
+            EVENTS
           </a>
-          <i class="fas fa-bars search-icon"></i>
+          <a href="#" className="nav-link">
+            WEBINARS
+          </a>
+          <i class="fas fa-search fa-lg search-icon"></i>
         </div>
       </div>
-      {/* <div className={hamburger} onClick={handleClick}>
-        <Hamburger toggled={isHamburger} />
-      </div> */}
+
       {/* </nav> */}
     </header>
   );
