@@ -4,24 +4,19 @@
 }
 
 .sub-link {
-  padding: 60px;
+  padding: 70px;
   font-size: 1.6rem;
   font-weight: 400;
   color: #475569;
 }
 
-
 @media only screen and (max-width: 768px) {
-
-  .SubNav-container{
+  .SubNav-container {
     text-align: justify;
     height: fit-content;
   }
-  .sub-link{
- 
+  .sub-link {
     width: 100%;
     padding: 0%;
-    
   }
- 
 }

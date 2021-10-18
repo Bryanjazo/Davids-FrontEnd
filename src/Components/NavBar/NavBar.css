@@ -3,7 +3,7 @@
   background-color: white;
   overflow: auto;
 
-  padding: 35px;
+  padding: 40px;
 }
 
 .navbar a:hover {
@@ -280,7 +280,6 @@
     position: absolute;
     left: calc((100% - 195px) / 2);
     z-index: 100000;
-
   }
   /* .hamburger {
     display: block;
