@@ -20,5 +20,4 @@ export default function BlockChain() {
   );
 }
 
-
-// create a full page with this.. so when user clicks on the blockchain section 
+// create a full page with this.. so when user clicks on the blockchain section

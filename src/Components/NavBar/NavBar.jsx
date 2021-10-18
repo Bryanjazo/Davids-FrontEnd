@@ -12,14 +12,17 @@ export default function NavBar() {
         <img class="logo" className="logo-img" src={logo} alt="logo" />
       </div>
 
+
       <div class="topnav">
       <div className="topnav-left">
         <a href="#" className="nav-link">
-          NEWSLETTER
+          <i class="fas fa-search fa-lg search-icon"></i>
         </a>
+
         <a href="#" className="nav-link">
           PODCASTS
         </a>
+
         </div>
         <div className="topnav-right">
           <a

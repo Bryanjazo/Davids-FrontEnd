@@ -4,7 +4,7 @@
 }
 
 .sub-link {
-  padding: 60px;
+  padding: 70px;
   font-size: 1.6rem;
   font-weight: 400;
   color: #475569;
@@ -14,11 +14,16 @@
 /* @media only screen and (max-width: 768px) {
 
   .SubNav-container{
+
+@media only screen and (max-width: 768px) {
+  .SubNav-container {
+
     text-align: justify;
     height: fit-content;
     border-bottom: 2px solid black;
     background-color: aqua;
   }
+
   /* .sub-link{
  background-color:bisque;
     width: 100%;
@@ -33,3 +38,4 @@
   } */
  
 /* } */ 
+
