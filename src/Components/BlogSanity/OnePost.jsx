@@ -46,11 +46,6 @@ export default function OnePost() {
                 {postData.title}
               </h2>
               <div className="flex justify-center text-gray-800">
-                <img
-                  src={urlFor(postData.authorImage).url()}
-                  className="w-10 h-10 rounded-full"
-                  alt="Author is Kap"
-                />
                 <h4 className="cursive flex items-center pl-2 text-2xl">
                   {postData.name}
                 </h4>
