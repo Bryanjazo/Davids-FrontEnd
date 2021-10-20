@@ -4,10 +4,12 @@ import "./WritersFeed.css";
 export default function WritersFeed() {
   return (
     <div className="recentSection">
-      <h3 className="recentsTitleWriters">WRITERS FEED</h3>
+      <h3 className="recentsTitleWriters ">WRITERS FEED</h3>
       <div className="writers-container">
         <div className="writers-Header">
-          <h1>Crypto Breaches Soar: A Deeper Look</h1>
+          <h1 className="font-serif text-lg">
+            Crypto Breaches Soar: A Deeper Look
+          </h1>
         </div>
         <div className="WritersPContainer">
           <div className="writers-author">
