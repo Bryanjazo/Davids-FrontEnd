@@ -31,10 +31,7 @@ function App() {
             </Route>
             <Route component={AllPost} path="/Blogs" exact />
             <Route component={OnePost} path="/Blogs/:slug" />
-            <Route path="/Blogs">
-              <BlogPost />
-            </Route>
-            BlogPost
+
             <Route path="/">
               <Home />
             </Route>

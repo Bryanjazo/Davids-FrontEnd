@@ -25,19 +25,19 @@ export default function AllPost() {
 
   console.log(allPostsData);
   return (
-    <div className="bg-green-100 min-h-screen p-12">
+    <div className="bg-green-100 min-h-screen">
       <div className="container mx-auto">
-        <h2 className="text-5xl flex justify-center cursive">Blog Posts</h2>
-        <h3 className="text-lg text-gray-600 flex justify-center mb-12">
+        <h2 className="text-6xl flex justify-center">Blog Posts</h2>
+        <h3 className="text-xl text-gray-600 flex justify-center mb-11 mt-5">
           Welcome to my blog posts page!
         </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {allPostsData &&
             allPostsData.map((post, index) => (
               <Link to={"/Blogs/" + post.slug.current} key={post.slug.current}>
                 <span
-                  className="block h-64 relative rounded shadow leading-snug bg-white
-                    border-l-8 border-green-400"
+                  className="block h-72 relative rounded shadow leading-snug bg-white
+                    border-l-8 border-purple-800"
                   key={index}
                 >
                   <img
