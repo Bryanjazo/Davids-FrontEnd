@@ -24,7 +24,7 @@ export default function Features() {
           <ReactPlayer
             width="100%"
             height="60rem"
-            
+
             url="https://www.youtube.com/watch?v=mKrLx4ex65w&feature=emb_title"
           />
         </div>

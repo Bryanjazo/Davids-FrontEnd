@@ -3,84 +3,36 @@
   background-color: white;
   overflow: auto;
   padding: 35px;
-
 }
-
-.topnav a {
-  display: flex;
-  flex-wrap: wrap;
-  float: right;
-  margin: 0px;
-  padding: 10px;
-  overflow: hidden;
-}
-
-
-
-@media (max-width: 767px){
-
-    .topnav {
-   
-        display: inline;
-        background-color: white;
-        
-        margin-top: 50px;
-        position: fixed;
-        border: 1px solid #bacdd8;
-    }
-
-    .topnav a{
-      display: block;
-    }
-
-
-    .menu-ham-container{
-      height: 100vh;
-    width: 85%;
-    }
-}
-
 .navbar a:hover {
   background-color: #000;
 }
-
 .navbar button:hover {
   background-color: #000;
 }
-
 .search-icon {
   padding-left: 3px;
 }
-
 .topnav a.active {
-  background-color: #04aa6d;
+  background-color: #04AA6D;
   color: white;
 }
-
 .navbar a {
   float: left;
-  color: #f2f2f2;
+  color: #F2F2F2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-
 .nav-link {
-  padding: 5px;
-
-
+  padding: 10px;
 }
-
 .topnav-right {
   float: right;
 }
-
 .topnav-left {
-  display: flex;
-  /* padding: 1rem 1.5rem; */
   float: left;
 }
-
 .logo-img {
   margin: 0 auto;
   display: block;
@@ -89,11 +41,9 @@
   z-index: 100000;
   width: 350px;
   height: auto;
-  margin-top: 1rem;
 }
-
 .button {
-  background-color: #120b2b;
+  background-color: #120B2B;
   border: none;
   color: white;
   padding: 10px 10px;
@@ -102,7 +52,6 @@
   display: inline-block;
   font-size: 16px;
 }
-
 /* .NavbarItems {
   background: linear-gradient(
     90deg,
@@ -116,14 +65,12 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
-
 .NavbarLogo {
   color: #fff;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
 }
-
 .fa-fantasy-flight-games {
   margin-left: 0.5rem;
   font-size: 1.6rem;
@@ -141,30 +88,25 @@
   justify-content: end;
   margin-right: 2rem;
 }
-
 .nav-links {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-
 .nav-links:hover {
-  background-color: #6d76f7;
+  background-color: #6D76F7;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
-
 .hamburger {
   color: #fff;
 }
 .nav-links-Mobile {
   display: none;
 }
-
 .MenuItmem {
   display: none;
 }
-
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -180,34 +122,29 @@
     opacity: 1;
     transition: all 0.5s ease;
   }
-
   .nav-menu.active {
-    background: #6668f4;
+    background: #6668F4;
     left: 0;
     opacity: 1;
     transition-timing-function: all 0.5s ease;
     z-index: 1;
   }
-
   .nav-links {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
   }
-
   .nav-links:hover {
-    background-color: #7577fa;
+    background-color: #7577FA;
     border-radius: 0;
   }
-
   .NavbarLogo {
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
   }
-
   .MenuItmem {
     display: block;
     position: absolute;
@@ -228,26 +165,23 @@
     margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
-    background: #4ad9e4;
+    background: #4AD9E4;
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
   }
   .nav-links-Mobile:hover {
     background: #fff;
-    color: #6568f4;
+    color: #6568F4;
     transition: 250ms;
   }
-
   Button {
     display: none;
   }
 } */
-
 .header {
-  border-bottom: 2px solid #e2e8f0;
+  border-bottom: 2px solid #E2E8F0;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -255,11 +189,9 @@
   padding: 1rem 1.5rem;
   float: left;
 }
-
 /* .hamburger {
   display: none;
 } */
-
 .bar {
   display: block;
   width: 25px;
@@ -269,34 +201,27 @@
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
 .nav-item {
   margin-left: 5rem;
 }
-
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
   color: #475569;
 }
-
 .nav-link:hover {
-  color: #482ff7;
+  color: #482FF7;
 }
-
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: #482ff7;
+  color: #482FF7;
 }
-
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -310,15 +235,12 @@
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
   .nav-menu.active {
     left: 0;
   }
-
   .nav-item {
     margin: 2.5rem 0;
   }
-
   .logo-img {
     width: 150px;
     margin: 0 auto;
@@ -334,13 +256,10 @@
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
