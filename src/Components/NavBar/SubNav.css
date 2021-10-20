@@ -10,6 +10,15 @@
   color: #475569;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .SubNav-container {
+  text-align: center;
+  padding: 30px;
+  float: left;
+  background-color: antiquewhite;
+}
+}
 
 /* @media only screen and (max-width: 768px) {
 

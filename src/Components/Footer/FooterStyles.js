@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  padding: 80px 60px;
+  padding: 80px 90px;
   background: #120b2b;
   bottom: 0;
   width: 100%;
@@ -24,7 +24,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 90px;
 `;
 
 export const Row = styled.div`
@@ -40,7 +40,7 @@ export const Row = styled.div`
 export const FooterLink = styled.a`
   color: #fff;
   margin-bottom: 18px;
-  font-size: 15.9px;
+  font-size: 12px;
   text-decoration: none;
 
   &:hover {
@@ -54,7 +54,7 @@ export const FooterLink = styled.a`
 `;
 
 export const Heading = styled.p`
-  font-size: 24px;
+  font-size: 16px;
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
@@ -67,7 +67,7 @@ export const Heading = styled.p`
 `;
 
 export const HeadingNewsLetter = styled.p`
-  font-size: 20px;
+  font-size: 12px;
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;

@@ -18,6 +18,8 @@ export default function NavBar() {
         <a href="#" className="nav-link">
           <i class="fas fa-search fa-lg search-icon"></i>
         </a>
+        
+
 
         <a href="#" className="nav-link">
           PODCASTS

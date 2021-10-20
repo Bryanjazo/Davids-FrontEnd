@@ -7,6 +7,7 @@ import { Rotate } from "hamburger-react";
 import Footer from "./Components/Footer/Footer";
 import SubNavBar from "./Components/NavBar/SubNavBar";
 import HamburgerMenu from "./Components/NavBar/HamburgerMenu";
+import BlockChainPage from "./Components/MidSection/BlockChainContainer/BlockChainPage";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
 
           <Switch>
             <Route path="/example">
-              <HamburgerMenu />
+              <BlockChainPage/>
             </Route>
             <Route path="/">
               <Home />
