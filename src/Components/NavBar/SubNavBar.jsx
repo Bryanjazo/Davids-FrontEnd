@@ -24,9 +24,9 @@ export default function SubNavBar() {
             Raise Your Game
           </a>
 
-          <a href="#" className="sub-link">
-            Schedule A Call With David
-          </a>
+          <Link to="/Blogs" className="sub-link">
+            Blogs
+          </Link>
           <a href="#" className="sub-link">
             About David Gokshtein
           </a>
