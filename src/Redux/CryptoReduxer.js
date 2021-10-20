@@ -10,23 +10,27 @@ export const getcryptos = createAsyncThunk("crypto/getcryptos", async () => {
   return data;
 });
 // http://cors-anywhere.localhost:3000/https://newsdata.io/api/1/news?apikey=pub_16460f40f944c9cf18b904131a8b1b89ba7f&country=us
-export const getnewsArticles =
-  createAsyncThunk();
-  // "crypto/getnewsArticles",
-  // async () => {
-  //   const response = await fetch(`http://localHost:8080/api/v1/Cryptos`);
-  //   const data = await response.json();
+export const getnewsArticles = createAsyncThunk();
+// "crypto/getnewsArticles",
+// async () => {
+//   const response = await fetch(`http://localHost:8080/api/v1/Cryptos`);
+//   const data = await response.json();
 
-  //   return data;
-  // }
+//   return data;
+// }
 
 const cryptoStore = createSlice({
   name: "crypto",
   initialState: {
     cryptos: [],
     newsArticles: [],
+    Blogs: {},
   },
-  reducers: {},
+  reducers: {
+    AddBlog: (state, action) => {
+      state.Blogs = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getcryptos.fulfilled, (state, action) => {
       state.cryptos.push(action.payload);
@@ -37,6 +41,6 @@ const cryptoStore = createSlice({
   },
 });
 
-export const {} = cryptoStore.actions;
+export const { AddBlog } = cryptoStore.actions;
 
 export default cryptoStore.reducer;
