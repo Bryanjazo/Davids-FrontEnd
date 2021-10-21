@@ -4,8 +4,8 @@ import HeadlineCard from "../Card/HeadlineCard";
 import "./NewsArticle.css";
 import { useSelector } from "react-redux";
 import CryptoTickers from "../Crypto/CryptoTickers";
-export default function NewsArticles(news) {
-  const { cryptos, newsArticles } = useSelector((state) => state.crypto);
+export default function NewsArticles() {
+  const { cryptos, newsArticles, blogs } = useSelector((state) => state.crypto);
 
   return (
     <div className="headlineSection">
@@ -14,7 +14,7 @@ export default function NewsArticles(news) {
         <div className="cardNews1"></div>
 
         <div className="CardNews1">
-          <HeadlineCard />
+          <HeadlineCard blogs={blogs} />
         </div>
       </div>
     </div>

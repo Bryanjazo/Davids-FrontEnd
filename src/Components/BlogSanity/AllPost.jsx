@@ -25,7 +25,7 @@ export default function AllPost() {
 
   console.log(allPostsData);
   return (
-    <div className="bg-green-100 min-h-screen">
+    <div className="min-h-screen">
       <div className="container mx-auto">
         <h2 className="text-6xl flex justify-center">Blog Posts</h2>
         <h3 className="text-xl text-gray-600 flex justify-center mb-11 mt-5">
