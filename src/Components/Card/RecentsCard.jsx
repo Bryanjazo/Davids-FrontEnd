@@ -1,6 +1,7 @@
 import "./RecentsCard.css";
 import moment from "moment";
 import { Link } from "react-router-dom";
+
 export default function RecentsCard(props) {
   console.log(props);
 
