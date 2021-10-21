@@ -6,11 +6,11 @@ import "./LifeStyle.css";
 import LifeStyleText from "./LifeStyleText";
 export default function Lifestyle() {
   const [lifestyle, setLifestyle] = useState([]);
-  useEffect(() => {
-    fetch("http://localHost:8080/api/v1/lifestyles")
-      .then((resp) => resp.json())
-      .then((data) => setLifestyle(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localHost:8080/api/v1/lifestyles")
+  //     .then((resp) => resp.json())
+  //     .then((data) => setLifestyle(data));
+  // }, []);
 
   return (
     <div className="lifeStyleSection">

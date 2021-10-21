@@ -53,7 +53,9 @@ export default function OnePost() {
       </div>
     );
   return (
-    <div className="bg-gray-200 min-h-screen p-12">
+
+    <div className=" min-h-screen p-12">
+
       <div className="container shadow-lg mx-auto rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">

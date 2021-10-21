@@ -13,6 +13,7 @@ export default function NavBar() {
       </div>
 
       <div class="topnav">
+
         <div className="topnav-left">
           <a href="#" className="nav-link">
             NEWSLETTER
@@ -20,6 +21,7 @@ export default function NavBar() {
           <a href="#" className="nav-link">
             PODCASTS
           </a>
+
         </div>
         <div className="topnav-right">
           <a

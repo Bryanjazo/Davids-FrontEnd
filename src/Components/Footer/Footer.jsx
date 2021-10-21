@@ -27,7 +27,8 @@ export default function Footer() {
        <div>
         {" "}
         <img
-          width="325rem"
+      
+          width="150rem"
           height="auto"
           class="small-logo"
           className="small-logo-img"
