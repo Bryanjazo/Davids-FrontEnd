@@ -16,23 +16,24 @@ import LearnCrypto from "./MidSection/LearnCrypto/LearnCrypto";
 import WritersFeed from "./MidSection/WritersFeed/WritersFeed";
 import Footer from "./Footer/Footer";
 import NavBar from "./NavBar/NavBar";
-
+import { getBlogs } from "../Redux/CryptoReduxer";
 export default function Home() {
-  const { cryptos, newsArticles } = useSelector((state) => state.crypto);
+  const { cryptos, newsArticles, blogs } = useSelector((state) => state.crypto);
 
-  console.log(newsArticles);
+  console.log(newsArticles, blogs);
   const dispatch = useDispatch();
+
   useEffect(() => {
-    dispatch(getcryptos());
+    dispatch(getBlogs());
     // dispatch(getnewsArticles());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
       <div className="home">
         <div className="split">
           <div className="newsSplit">
-            <NewsArticles news={newsArticles} />
+            <NewsArticles />
 
             <Features />
 

@@ -49,9 +49,9 @@
 }
 
 .left {
-  width: 60%;
+  width: 58%;
   border-bottom: 1px solid lightgray;
-  padding-left: 6rem;
+  margin-left: 5rem;
   display: flex;
 }
 
