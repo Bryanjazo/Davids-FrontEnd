@@ -1,3 +1,50 @@
-/* .menu-ham-container{
-width: 100px;
-} */
+.topnav{
+    width: 100%;
+    height: 50px;
+}
+.topnav a{
+    display:flex;
+    flex-wrap: wrap;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.nav-link{
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.hamburger{
+    z-index: 6;
+}
+
+@media (max-width: 767px){
+  
+    .hamburger{
+        display:fixed;
+        padding-top: 10px;
+        margin-left: 10px;
+        z-index: 6;
+    }
+
+    .topnav-ham{
+
+      border-bottom: 1px solid #E1E2E3;
+    }
+
+   
+    .topnav{
+
+        background-color: white;
+        height: 90%;
+        width: 80%;
+        margin-top: 50px;
+        
+        border-bottom: 1px solid #E1E2E3;
+        background-color: white;
+
+
+        
+    }
+}

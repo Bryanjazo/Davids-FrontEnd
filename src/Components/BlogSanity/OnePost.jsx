@@ -36,8 +36,8 @@ export default function OnePost() {
   }, [slug]);
   if (!postData) return <div>Loading...</div>;
   return (
-    <div className="bg-gray-200 min-h-screen p-12">
-      <div className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+    <div className=" min-h-screen p-12">
+      <div className="container shadow-lg mx-auto rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
             {/* Title Section */}

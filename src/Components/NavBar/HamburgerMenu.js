@@ -30,6 +30,7 @@ export default function HamburgerMenu() {
     return (
         <div className="menu-ham-container">
           <div class="topnav">
+          <div className="topnav-ham">
         <a href="#" className="nav-link">
           NEWSLETTER
         </a>
@@ -44,7 +45,9 @@ export default function HamburgerMenu() {
             COIN SWAP
           </a>
           <i class="fas fa-search fa-lg search-icon"></i>
+          </div>
         </div>
+        
 
       <div className="SubNav-container">
         <div className="SubNav-container-two">
@@ -78,55 +81,14 @@ export default function HamburgerMenu() {
         <Hamburger isOpen={hamburgerOpen} />
       </div>
             
-
-
          <style jsx>{`
-      .topnav{
-                    width: 100%;
-                    height: 50px;
-                }
-                
-                
-                .topnav a{
-                    display:flex;
-                    flex-wrap: wrap;
-                    float: right;
-                    margin: 0px;
-                    padding: 0px;
-                    overflow: hidden;
-                }
-                .nav-link{
-                    list-style-type: none;
-                    padding-right: 10px;
-                }
-          
-                .hamburger{
-                   
-                    z-index: 6;
-                } 
+              
                 @media (max-width: 767px){
-                  
-                    .hamburger{
-                        display:fixed;
-                        padding-top: 10px;
-                        margin-left: 10px;
-                        z-index: 6;
-                    }
-                
-                   
                     .topnav{
                         display: ${hamburgerOpen ? 'inline' : 'none'};
-                        background-color: white;
-                        height: 90%;
-                        width: 80%;
-                        margin-top: 50px;
-                        position: fixed;
-                        
+                       
                     }
-                }
-                
-               
-                
+                } 
             `}</style>
             </div>
     )

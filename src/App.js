@@ -12,6 +12,9 @@ import HamburgerMenu from "./Components/NavBar/HamburgerMenu";
 import BlogPost from "./Components/BlogContainer/BlogPost";
 import AllPost from "./Components/BlogSanity/AllPost";
 import OnePost from "./Components/BlogSanity/OnePost";
+import SideNavBar from "./Components/NavBar/SideNavBar";
+
+
 
 
 
@@ -22,7 +25,7 @@ function App() {
       <Router>
         <div className="App">
           <div className="mobile-nav-container">
-            <HamburgerMenu />
+            <SideNavBar />
           </div>
 
           <div className="desktop-container">
