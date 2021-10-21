@@ -21,6 +21,7 @@
     "coingecko-api": "^1.0.10",
     "hamburger-react": "^2.4.1",
     "http-proxy-middleware": "^0.19.1",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-player": "^2.9.0",
@@ -29,6 +30,7 @@
     "react-scripts": "4.0.3",
     "react-share": "^4.4.0",
     "react-social-icons": "^5.6.1",
+    "react-spinners": "^0.11.0",
     "reactstrap": "^8.10.0",
     "styled-components": "^5.3.1",
     "web-vitals": "^1.0.1"

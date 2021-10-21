@@ -1,24 +1,29 @@
 import "./RecentsCard.css";
+import moment from "moment";
+import { Link } from "react-router-dom";
 
 export default function RecentsCard(props) {
   console.log(props);
 
-  const handleClick = (e, props) => {
-    e.preventDefault();
-
-    console.log(props);
-  };
   return (
     <div className="recents-card">
-      <div className="r-card" onClick={(e) => handleClick(e, props)}>
-        <div className="header">
-          <h1> {props.header} </h1>
+      <Link
+        className="LinkText"
+        to={"/Blogs/" + props.slug.current}
+        key={props.slug.current}
+      >
+        <div className="r-card">
+          <div className="header">
+            <h1> {props.title} </h1>
+          </div>
+          <div className="sub-header">
+            <p className="author">{props.categories[1]}</p>
+            <p className="date">
+              {moment(props._createdAt).format("MMMM Do YYYY")}
+            </p>
+          </div>
         </div>
-        <div className="sub-header">
-          <p className="author">{props.catergoryByDate}</p>
-          <p className="date">{props.date}</p>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 }

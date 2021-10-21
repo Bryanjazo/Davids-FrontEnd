@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import "./index.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -12,12 +12,14 @@ import HamburgerMenu from "./Components/NavBar/HamburgerMenu";
 import BlogPost from "./Components/BlogContainer/BlogPost";
 import AllPost from "./Components/BlogSanity/AllPost";
 import OnePost from "./Components/BlogSanity/OnePost";
+
 import SideNavBar from "./Components/NavBar/SideNavBar";
 
 
 
 
 
+import LandingPage from "./Components/LandingPages/LandingPage";
 
 function App() {
   return (
@@ -34,7 +36,10 @@ function App() {
           </div>
 
           <Switch>
-            
+            <Route path="/example">
+              <LandingPage />
+            </Route>
+
             <Route component={AllPost} path="/Blogs" exact />
             <Route component={OnePost} path="/Blogs/:slug" />
 

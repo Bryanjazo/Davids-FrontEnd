@@ -3,11 +3,21 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../../Client/client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import RingLoader from "react-spinners/RingLoader";
+import { css } from "@emotion/react";
 import "./BothPost.css";
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
 }
+
+const override = css`
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  overlay-y: scroll;
+`;
 
 export default function OnePost() {
   const [postData, setPostData] = useState(null);
@@ -34,9 +44,18 @@ export default function OnePost() {
       .then((data) => setPostData(data[0]))
       .catch(console.error);
   }, [slug]);
-  if (!postData) return <div>Loading...</div>;
+  if (!postData)
+    return (
+      <div className="ringLoaderContainer">
+        <div className="ringLoader">
+          <RingLoader size={50} />
+        </div>
+      </div>
+    );
   return (
+
     <div className=" min-h-screen p-12">
+
       <div className="container shadow-lg mx-auto rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
