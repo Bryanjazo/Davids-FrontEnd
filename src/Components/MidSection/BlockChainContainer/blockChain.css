@@ -6,3 +6,10 @@
   border-bottom: 2px solid black;
   margin-right: 55px;
 }
+.lifeStyleSection {
+  overflow: scroll;
+  max-height: 739px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}

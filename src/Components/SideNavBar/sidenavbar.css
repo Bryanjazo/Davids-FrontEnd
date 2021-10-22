@@ -1,0 +1,250 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#menu-slide.menu-open {
+  -webkit-transform: translate(0px, 10px);
+  transform: translate(0px, 10px);
+}
+
+@media screen and (max-width: 620px) {
+  #menu-slide {
+    -webkit-transform: translate(-500px, 10px);
+    transform: translate(-526px, 10px);
+  }
+}
+
+#nav-close {
+  cursor: pointer;
+}
+
+#menu-slide {
+  -webkit-transform: translate(-600px, 10px);
+  transform: translate(-600px, 10px);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  top: -9px;
+}
+
+.menu-slide {
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  width: 90%;
+  max-width: 500px;
+  padding: 25px;
+  background-color: white;
+  -webkit-box-shadow: 8px 0px 14px #0000001f;
+  box-shadow: 8px 0px 14px #0000001f;
+  z-index: 100;
+}
+
+.menu-close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-close-btn span {
+  margin-right: 8px;
+}
+
+.icon {
+  font-family: "icons";
+  font-weight: 300;
+}
+
+#nav-close {
+  cursor: pointer;
+}
+
+.nav-txt {
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.slider-category-items {
+  margin-top: 30px;
+  border-bottom: 1px solid #e1e2e3;
+  margin-bottom: 30px;
+}
+
+.slider-category-items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+  max-width: 400px;
+  padding: 0px;
+}
+
+.slider-category-items ul li {
+  width: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-right: 18px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-slide-out-2-container {
+  padding-top: 0px;
+}
+
+.crd {
+  border-bottom: 1px solid #e1e2e3;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+}
+
+.crd .imgbox {
+  overflow: hidden;
+  position: relative;
+  padding-top: 50%;
+}
+
+.crd img {
+  max-width: 100%;
+}
+
+.crd .card-content {
+  padding: 10px 0 10px 3%;
+}
+
+.crd .card_title {
+  font-size: 17px;
+  font-family: heading;
+  margin: 10px 0px;
+  display: block;
+  line-height: 1.1;
+}
+
+.card_title {
+  letter-spacing: 0.015em;
+}
+
+.slide-query .card .post-creation-details {
+  display: none;
+}
+
+.crd .post-creation-details {
+  font-size: 12px;
+  text-transform: none;
+  color: #676767;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+
+.slide-query .crd img {
+  height: 250px !important;
+}
+
+.crd .imgbox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button {
+  padding: 15px;
+  background-color: #5a35d500;
+  border-radius: 5px;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 0ms;
+}
+
+.menu-slide .slide-footer {
+  background: #fff;
+}
+
+.menu-slide .slide-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 25px 25px;
+}
+
+.slide-logo img {
+  width: 19px;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 0ms;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-style: none;
+}
+
+.menu-slide .slide-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu-slide .slide-social span {
+  margin-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+}
+
+.menu-slide .slide-social div a {
+  margin: 0px 10px;
+  font-family: icons-brands;
+}

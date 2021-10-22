@@ -11,7 +11,7 @@ export default function LifeStyleText(blog) {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="c-section">
       {blog.blog.map((b) =>
         b
           .filter(
@@ -21,14 +21,17 @@ export default function LifeStyleText(blog) {
           )
           .map((arr) => (
             <Link to={"/Blogs/" + arr.slug.current} key={arr.slug.current}>
-              <div className="lifeStyle-container">
-                <div className="lifeStyle-Header">
-                  <h1 className="lifestyle-title">{arr.title}</h1>
-                </div>
-                <div className="lifeStyle-paragraph">
-                  <p className="Date">
-                    {moment(arr._createdAt).format("MMMM Do YYYY")}
-                  </p>
+              <div className="containerAll">
+                <img className="allImg" src={arr.mainImage.asset.url} />
+                <div className="textAll">
+                  <div className="AllHeading">
+                    <h1 className="lifestyle-title">{arr.title}</h1>
+                  </div>
+                  <div className="AllParagraphs">
+                    <p className="Date">
+                      {moment(arr._createdAt).format("MMMM Do YYYY")}
+                    </p>
+                  </div>
                 </div>
               </div>
             </Link>
