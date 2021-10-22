@@ -10,7 +10,7 @@ export default function Recents() {
   //     .then((resp) => resp.json())
   //     .then((data) => setHeadlines(data));
   // }, []);
-  console.log(blogs);
+
   return (
     <div className="recentSection">
       <h3 className="recentsTitle">Recents</h3>

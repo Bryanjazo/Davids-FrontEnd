@@ -4,27 +4,36 @@ import { useHistory } from "react-router-dom";
 import BlogPost from "../../BlogContainer/BlogPost";
 import { AddBlog } from "../../../Redux/CryptoReduxer";
 import { useSelector, useDispatch } from "react-redux";
-export default function LifeStyleText(props) {
+import { Link } from "react-router-dom";
+import moment from "moment";
+export default function LifeStyleText(blog) {
   const history = useHistory();
   const dispatch = useDispatch();
-  const handleClick = (e, props) => {
-    e.preventDefault();
-    dispatch(AddBlog(props));
-    history.push(`/Blogs`);
-  };
+
   return (
     <div>
-      <div
-        className="lifeStyle-container"
-        onClick={(e) => handleClick(e, props)}
-      >
-        <div className="lifeStyle-Header">
-          <h1>{props.header}</h1>
-        </div>
-        <div className="lifeStyle-paragraph">
-          <p className="Date">{props.date}</p>
-        </div>
-      </div>
+      {blog.blog.map((b) =>
+        b
+          .filter(
+            (info) =>
+              info.categories[0] === "Lifestyle" ||
+              info.categories[1] === "Lifestyle"
+          )
+          .map((arr) => (
+            <Link to={"/Blogs/" + arr.slug.current} key={arr.slug.current}>
+              <div className="lifeStyle-container">
+                <div className="lifeStyle-Header">
+                  <h1 className="lifestyle-title">{arr.title}</h1>
+                </div>
+                <div className="lifeStyle-paragraph">
+                  <p className="Date">
+                    {moment(arr._createdAt).format("MMMM Do YYYY")}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))
+      )}
     </div>
   );
 }

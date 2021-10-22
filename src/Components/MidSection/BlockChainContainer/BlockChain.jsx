@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import RecentsCard from "../../Card/RecentsCard";
 import LifeStyleText from "../LifestyleContainer/LifeStyleText";
-import "./blockChain.css";
-
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import moment from "moment";
 export default function BlockChain() {
   const [blockchain, setBlockchain] = useState([]);
   // useEffect(() => {
@@ -10,12 +11,32 @@ export default function BlockChain() {
   //     .then((resp) => resp.json())
   //     .then((data) => setBlockchain(data));
   // }, []);
+  const { blogs } = useSelector((state) => state.crypto);
   return (
-    <div className="recentSection">
-      <h3 className="blockChainTitle">BLOCKCHAIN</h3>
-      {blockchain.map((list) => (
-        <LifeStyleText {...list} />
-      ))}
+    <div className="lifeStyleSection">
+      <h3 className="lifeStyleHeader">Blockchain</h3>
+      {blogs.map((b) =>
+        b
+          .filter(
+            (info) =>
+              info.categories[0] === "Blockchain" ||
+              info.categories[1] === "Blockchain"
+          )
+          .map((arr) => (
+            <Link to={"/Blogs/" + arr.slug.current} key={arr.slug.current}>
+              <div className="lifeStyle-container">
+                <div className="lifeStyle-Header">
+                  <h1 className="lifestyle-title">{arr.title}</h1>
+                </div>
+                <div className="lifeStyle-paragraph">
+                  <p className="Date">
+                    {moment(arr._createdAt).format("MMMM Do YYYY")}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))
+      )}
     </div>
   );
 }
