@@ -3,7 +3,7 @@ import "./LandingPage.css";
 import ReactPlayer from "react-player";
 import LifeStyleText from "../MidSection/LifestyleContainer/LifeStyleText";
 import DarkBitcoin from "../images/DarkBitcoin.png";
-export default function LandingPage() {
+export default function LandingPage(props) {
   return (
     <div className="PageSection">
       <h3 className="title">TITLE</h3>

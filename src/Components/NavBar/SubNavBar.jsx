@@ -13,27 +13,30 @@ export default function SubNavBar() {
             Home
           </Link>
 
-          <a href="#" className="sub-link">
+          <Link to="/Lifestyle" className="sub-link">
             Lifestyle
-          </a>
-
-          <a href="#" className="sub-link">
-            Becoming A Patron
-          </a>
-          <a href="#" className="sub-link">
-            Raise Your Game
-          </a>
-
-          <Link to="/Blogs" className="sub-link">
-            Blogs
           </Link>
-          <a href="#" className="sub-link">
-            About David Gokshtein
-          </a>
 
-          <a href="#" className="sub-link">
+          <Link to="/Blockchain" className="sub-link">
+            Blockchain
+          </Link>
+
+          <Link to="/Learn-Crypto" className="sub-link">
+            Learn Crypto
+          </Link>
+          <Link to="/Writers-Feed" className="sub-link">
+            Writers Feed
+          </Link>
+          <Link to="/All-Blogs" className="sub-link">
+            All Blogs
+          </Link>
+
+          <Link to="/Patron" className="sub-link">
+            Become A Patron
+          </Link>
+          <Link to="/About" className="sub-link">
             About Us
-          </a>
+          </Link>
         </div>
       </div>
 
