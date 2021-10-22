@@ -1,12 +1,24 @@
-.lifeStyle-container {
-  padding-top: 40px;
-  padding-left: 25px;
+.AllHeading {
+  padding: 0px 0px 0px 10px;
 }
-
+.AllParagraphs {
+  padding: 0px 0px 0px 10px;
+}
 .lifestyle-title {
   width: 92%;
+  font-size: 18px;
 }
-
+.images {
+  max-width: 44%;
+}
+.allImg {
+  width: 37%;
+  height: 7%;
+}
+.containerAll {
+  display: flex;
+  padding: 30px 0px 0px 18px;
+}
 @media only screen and (max-width: 768px) {
   .lifeStyleContainer,
   .lifeStyleSection,
@@ -32,7 +44,7 @@
 }
 .c-section {
   overflow: scroll;
-  max-height: 68rem;
+  max-height: 66rem;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
