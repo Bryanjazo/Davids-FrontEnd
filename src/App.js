@@ -13,11 +13,7 @@ import BlogPost from "./Components/BlogContainer/BlogPost";
 import AllPost from "./Components/BlogSanity/AllPost";
 import OnePost from "./Components/BlogSanity/OnePost";
 
-import SideNavBar from "./Components/NavBar/SideNavBar";
-
-
-
-
+import SideNavBar from "./Components/SideNavBar/Sidenavbar";
 
 import LandingPage from "./Components/LandingPages/LandingPage";
 

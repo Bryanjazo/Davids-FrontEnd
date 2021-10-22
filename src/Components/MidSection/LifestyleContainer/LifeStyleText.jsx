@@ -11,7 +11,7 @@ export default function LifeStyleText(blog) {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="c-section">
       {blog.blog.map((b) =>
         b
           .filter(

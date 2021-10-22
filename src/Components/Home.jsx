@@ -12,11 +12,12 @@ import "./Home.css";
 
 import Lifestyle from "./MidSection/LifestyleContainer/Lifestyle";
 import BlockChain from "./MidSection/BlockChainContainer/BlockChain";
-import LearnCrypto from "./MidSection/LearnCrypto/LearnCrypto";
-import WritersFeed from "./MidSection/WritersFeed/WritersFeed";
+import LearnCryptoHeading from "./MidSection/LearnCrypto/LearnCryptoHeading";
+import WritersHeading from "../Components/MidSection/WritersFeed/WritersHeading";
 import Footer from "./Footer/Footer";
 import NavBar from "./NavBar/NavBar";
 import { getBlogs } from "../Redux/CryptoReduxer";
+import BlockchainHeadings from "./MidSection/BlockChainContainer/BlockchainHeadings";
 export default function Home() {
   const { cryptos, newsArticles, blogs } = useSelector((state) => state.crypto);
 
@@ -42,9 +43,9 @@ export default function Home() {
 
           <div className="split2">
             <Lifestyle />
-            <BlockChain />
-            <LearnCrypto />
-            <WritersFeed />
+            <BlockchainHeadings />
+            <LearnCryptoHeading />
+            <WritersHeading />
           </div>
 
           <Teamheader />

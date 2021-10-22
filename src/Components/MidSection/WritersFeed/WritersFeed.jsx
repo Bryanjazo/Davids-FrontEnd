@@ -7,8 +7,7 @@ import { Link } from "react-router-dom";
 export default function WritersFeed() {
   const { blogs } = useSelector((state) => state.crypto);
   return (
-    <div className="recentSection">
-      <h3 className="recentsTitleWriters ">WRITERS FEED</h3>
+    <div className="c-section">
       {blogs.map((b) =>
         b
           .filter(

@@ -30,9 +30,17 @@
   font-size: 1.39rem;
   font-weight: 1500;
 }
+.c-section {
+  overflow: scroll;
+  max-height: 68rem;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
 
 .lifeStyleSection {
   width: 25%;
+
   float: left;
   /* padding: 2rem; */
 }

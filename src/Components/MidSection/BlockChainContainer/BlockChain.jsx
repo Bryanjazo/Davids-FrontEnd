@@ -13,8 +13,7 @@ export default function BlockChain() {
   // }, []);
   const { blogs } = useSelector((state) => state.crypto);
   return (
-    <div className="lifeStyleSection">
-      <h3 className="lifeStyleHeader">Blockchain</h3>
+    <div className="c-section">
       {blogs.map((b) =>
         b
           .filter(

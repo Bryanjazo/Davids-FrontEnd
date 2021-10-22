@@ -9,8 +9,7 @@ export default function LearnCrypto() {
   const { blogs } = useSelector((state) => state.crypto);
 
   return (
-    <div className="lifeStyleSection">
-      <h3 className="lifeStyleHeader">Learn Crypto</h3>
+    <div className="c-section">
       {blogs.map((b) =>
         b
           .filter(
