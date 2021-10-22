@@ -21,14 +21,6 @@ import BlockchainHeadings from "./MidSection/BlockChainContainer/BlockchainHeadi
 export default function Home() {
   const { cryptos, newsArticles, blogs } = useSelector((state) => state.crypto);
 
-  console.log(newsArticles, blogs);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getBlogs());
-    // dispatch(getnewsArticles());
-  }, [dispatch]);
-
   return (
     <div>
       <div className="home">
