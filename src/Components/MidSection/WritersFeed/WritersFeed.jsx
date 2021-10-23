@@ -29,7 +29,7 @@ export default function WritersFeed() {
                   </div>
                   <div className="writers-paragraph">
                     <p className="writers-p">
-                      {moment(arr._createdAt).format("MMMM Do YYYY")}
+                      <b>{moment(arr._createdAt).format("MMMM Do YYYY")}</b>
                     </p>
                   </div>
                 </div>

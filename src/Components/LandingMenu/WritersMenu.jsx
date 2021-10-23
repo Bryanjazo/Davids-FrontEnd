@@ -1,5 +1,5 @@
 import React from "react";
-import LandingPage from "../LandingPages/LandingPage";
+import "./LandingPage.css";
 import { useSelector } from "react-redux";
 import ReactPlayer from "react-player";
 import moment from "moment";
@@ -35,7 +35,7 @@ export default function WritersMenu() {
                 />
                 <div className="text">
                   <div className="landing-category">
-                    <h3>
+                    <h3 className="cat-text">
                       {list.categories[0] === "Writers Feed"
                         ? list.categories[0]
                         : list.categories[1]}

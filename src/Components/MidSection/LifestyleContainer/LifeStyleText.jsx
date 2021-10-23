@@ -1,7 +1,7 @@
 import React from "react";
 import "./LifeStyle.css";
 import { useHistory } from "react-router-dom";
-import BlogPost from "../../BlogContainer/BlogPost";
+
 import { AddBlog } from "../../../Redux/CryptoReduxer";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -28,9 +28,11 @@ export default function LifeStyleText(blog) {
                     <h1 className="lifestyle-title">{arr.title}</h1>
                   </div>
                   <div className="AllParagraphs">
-                    <p className="Date">
-                      {moment(arr._createdAt).format("MMMM Do YYYY")}
-                    </p>
+                    <b>
+                      <p className="Date">
+                        {moment(arr._createdAt).format("MMMM Do YYYY")}
+                      </p>
+                    </b>
                   </div>
                 </div>
               </div>

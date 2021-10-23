@@ -13,8 +13,7 @@ export default function NavBar() {
       </div>
 
       <div class="topnav">
-
-        <div className="topnav-left">
+        {/* <div className="topnav-left">
           <a href="#" className="nav-link">
             NEWSLETTER
           </a>
@@ -22,8 +21,8 @@ export default function NavBar() {
             PODCASTS
           </a>
 
-        </div>
-        <div className="topnav-right">
+        </div> */}
+        {/* <div className="topnav-right">
           <a
             href="../MidSection/BlockChainContainer/BlockChainPage"
             className="nav-link"
@@ -32,11 +31,11 @@ export default function NavBar() {
             <i class="fas fa-search fa-lg search-icon"></i>
           </a>
 
-          {/* <Link to="/BlockChainPage"> BLOCKCHAIN </Link> */}
+       
           <a href="#" className="nav-link">
             COIN SWAP
           </a>
-        </div>
+        </div> */}
       </div>
     </header>
   );

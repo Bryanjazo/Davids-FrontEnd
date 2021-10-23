@@ -69,10 +69,10 @@
 
 /* Clear floats after the columns */
 /* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
+    content: "";
+    display: table;
+    clear: both;
+  } */
 
 @media only screen and (max-width: 768px) {
   .column {

@@ -21,9 +21,6 @@ export default function Recents() {
             .map((blogD) => <RecentsCard {...blogD} />)
         )
       )}
-      {/* {headlines.map((headline) => (
-        <RecentsCard {...headline} />
-      ))} */}
     </div>
   );
 }

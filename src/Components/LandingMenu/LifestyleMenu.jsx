@@ -1,9 +1,9 @@
 import React from "react";
-import LandingPage from "../LandingPages/LandingPage";
+
 import { useSelector } from "react-redux";
 import ReactPlayer from "react-player";
 import moment from "moment";
-import "../LandingPages/LandingPage.css";
+// import "../LandingPages/LandingPage.css";
 export default function LifestyleMenu() {
   const { blogs } = useSelector((state) => state.crypto);
   return (
@@ -35,7 +35,7 @@ export default function LifestyleMenu() {
                 />
                 <div className="text">
                   <div className="landing-category">
-                    <h3>
+                    <h3 className="cat-text">
                       {list.categories[0] === "Lifestyle"
                         ? list.categories[0]
                         : list.categories[1]}

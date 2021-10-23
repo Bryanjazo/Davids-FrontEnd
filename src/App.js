@@ -9,7 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import SubNavBar from "./Components/NavBar/SubNavBar";
 import HamburgerMenu from "./Components/NavBar/HamburgerMenu";
 import { getBlogs, getcryptos } from "./Redux/CryptoReduxer";
-import BlogPost from "./Components/BlogContainer/BlogPost";
+
 import AllPost from "./Components/BlogSanity/AllPost";
 import OnePost from "./Components/BlogSanity/OnePost";
 import AllBlogs from "./Components/LandingMenu/AllBlogs";

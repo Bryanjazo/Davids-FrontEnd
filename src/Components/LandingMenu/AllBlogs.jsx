@@ -1,5 +1,5 @@
 import React from "react";
-import LandingPage from "../LandingPages/LandingPage";
+
 import { useSelector } from "react-redux";
 import ReactPlayer from "react-player";
 import moment from "moment";
@@ -25,7 +25,7 @@ export default function AllBlogs() {
               <img className="landingPageImg" src={list.mainImage.asset.url} />
               <div className="text">
                 <div className="landing-category">
-                  <h3>
+                  <h3 className="cat-text">
                     {list.categories[0] === "Recents"
                       ? list.categories[1]
                       : list.categories[0]}

@@ -40,7 +40,7 @@ export default function Home() {
             <WritersHeading />
           </div>
 
-          <Teamheader />
+          {/* <Teamheader /> */}
         </div>
       </div>
     </div>

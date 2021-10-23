@@ -3,7 +3,16 @@
   height: auto;
   width: auto;
 }
+.video1 {
+  padding: 20px 100px 0px 0px;
+}
 
+.realted-videos {
+  font-size: 1.5rem;
+  padding: 10px 0px 0px 0px;
+
+  border-bottom: 2px solid black;
+}
 .featuresSection {
   width: 45%;
   float: left;
@@ -11,7 +20,9 @@
   height: 75rem;
   padding-left: 35px;
 }
-
+.sub-video-container {
+  display: flex;
+}
 @media only screen and (max-width: 768px) {
   .featuresSection {
     width: 100%;
@@ -24,10 +35,8 @@
     /* height: 600px; */
   }
 
-
   .hl-card {
     width: 100%;
-
   }
 }
 
@@ -39,7 +48,7 @@
   border-bottom: 2px solid black;
 }
 .hl-card {
-  padding-top: 8rem;
+  padding-top: 2rem;
 }
 .hlcard {
   max-height: 115rem;
