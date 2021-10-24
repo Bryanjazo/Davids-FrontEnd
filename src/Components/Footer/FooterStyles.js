@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   padding: 80px 90px;
-  background: #120b2b;
+  background: #2596be;
   bottom: 0;
   width: 100%;
 
   @media (max-width: 1000px) {
     padding: 70px 30px;
-
   }
 `;
 
@@ -49,7 +48,6 @@ export const FooterLink = styled.a`
   }
   @media (max-width: 1000px) {
     font-size: 20px;
-    
   }
 `;
 
@@ -59,11 +57,10 @@ export const Heading = styled.p`
   margin-bottom: 40px;
   font-weight: bold;
 
- @media (max-width: 1000px) {
+  @media (max-width: 1000px) {
     padding-top: 10px;
     font-size: 28px;
   }
-
 `;
 
 export const HeadingNewsLetter = styled.p`
