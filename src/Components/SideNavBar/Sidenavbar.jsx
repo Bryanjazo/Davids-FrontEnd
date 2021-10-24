@@ -3,7 +3,10 @@ import "./sidenavbar.css";
 import Hamburger from "../NavBar/Hamburger";
 import { Transition } from "react-transition-group";
 import logo from "../images/SmallLogo.png";
+import logoLarge from "../images/logo.png";
 import example from "../images/workcation.jpeg";
+import { Link } from "react-router-dom";
+
 const duration = 1000;
 const sidebarStyle = {
   transition: `width ${duration}ms`,
@@ -33,8 +36,20 @@ export default function SideNavBar() {
 
   if (!isOpen) {
     return (
-      <div onClick={handleClick}>
-        <Hamburger />
+      <div>
+        <div className="Phone-nav-container">
+          <div className="hamDiv" onClick={handleClick}>
+            <Hamburger />
+          </div>
+          <Link to="/">
+            <div className="LogoDiv">
+              <img className="phoneLogo" src={logoLarge} />
+            </div>
+          </Link>
+          <div className="homeIcon">
+            <i class="fas fa-search fa-2x icon-Phone"></i>
+          </div>
+        </div>
       </div>
     );
   }
@@ -51,7 +66,7 @@ export default function SideNavBar() {
           <div id="menu-slide" className="menu-slide menu-open">
             <div id="nav-close" className="menu-close-btn">
               <span className="icon" onClick={handleClick}>
-                
+                <i class="fas fa-times fa-lg"></i>
               </span>
               <div className="nav-txt">Sections</div>
             </div>
@@ -62,30 +77,33 @@ export default function SideNavBar() {
                     id="menu-item-1763"
                     className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-477 current_page_item menu-item-1763"
                   >
-                    <a
-                      href="https://blockworks.co/newsletter/"
-                      aria-current="page"
-                    >
+                    <Link aria-current="page" to="/Lifestyle">
                       Lifestyle
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-1762"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1762"
                   >
-                    <a href="#">Blockchain</a>
+                    <Link aria-current="page" to="/Blockchain">
+                      Blockchain
+                    </Link>
                   </li>
                   <li
                     id="menu-item-787"
                     className="menu-item menu-item-type-post_type_archive menu-item-object-events menu-item-787"
                   >
-                    <a href="#">Learn Crypto</a>
+                    <Link aria-current="page" to="/Learn-Crypto">
+                      Learn Crypto
+                    </Link>
                   </li>
                   <li
                     id="menu-item-788"
                     className="menu-item menu-item-type-post_type_archive menu-item-object-webinars menu-item-788"
                   >
-                    <a href="#">Writers Feed</a>
+                    <Link aria-current="page" to="/Writers-Feed">
+                      Writers Feed
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -98,15 +116,15 @@ export default function SideNavBar() {
                     id="menu-item-2749"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2749"
                   >
-                    <a href="https://blockworks.co/category/asset-management/">
+                    <Link aria-current="page" to="/All-Blogs">
                       All Blogs
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-2751"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2751"
                   >
-                    <a href="#">About David</a>
+                    <a href="All-Blogs">About David</a>
                   </li>
                   <li
                     id="menu-item-3161"

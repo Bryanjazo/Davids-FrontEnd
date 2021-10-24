@@ -14,11 +14,29 @@
     transform: translate(-526px, 10px);
   }
 }
-
+.Phone-nav-container {
+  display: flex;
+}
 #nav-close {
   cursor: pointer;
 }
-
+.phoneLogo {
+  padding-top: 5px;
+}
+.LogoDiv {
+  display: block;
+  position: absolute;
+  left: calc((100% - 195px) / 2);
+}
+.homeIcon {
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: 18px 15px 0px 0px;
+}
+.phoneLogo {
+  width: 20rem;
+}
 #menu-slide {
   -webkit-transform: translate(-600px, 10px);
   transform: translate(-600px, 10px);
