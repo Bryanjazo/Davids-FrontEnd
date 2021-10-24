@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./sidenavbar.css";
 import Hamburger from "../NavBar/Hamburger";
 import { Transition } from "react-transition-group";
-
+import logo from "../images/SmallLogo.png";
+import example from "../images/workcation.jpeg";
 const duration = 1000;
 const sidebarStyle = {
   transition: `width ${duration}ms`,
@@ -65,26 +66,26 @@ export default function SideNavBar() {
                       href="https://blockworks.co/newsletter/"
                       aria-current="page"
                     >
-                      NEWSLETTER
+                      Lifestyle
                     </a>
                   </li>
                   <li
                     id="menu-item-1762"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1762"
                   >
-                    <a href="#">PODCASTS</a>
+                    <a href="#">Blockchain</a>
                   </li>
                   <li
                     id="menu-item-787"
                     className="menu-item menu-item-type-post_type_archive menu-item-object-events menu-item-787"
                   >
-                    <a href="#">COIN SWAP</a>
+                    <a href="#">Learn Crypto</a>
                   </li>
                   <li
                     id="menu-item-788"
                     className="menu-item menu-item-type-post_type_archive menu-item-object-webinars menu-item-788"
                   >
-                    <a href="#">BLOCKCHAIN</a>
+                    <a href="#">Writers Feed</a>
                   </li>
                 </ul>
               </div>
@@ -98,68 +99,44 @@ export default function SideNavBar() {
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2749"
                   >
                     <a href="https://blockworks.co/category/asset-management/">
-                      Asset Management
+                      All Blogs
                     </a>
                   </li>
                   <li
                     id="menu-item-2751"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2751"
                   >
-                    <a href="#">Financial Services</a>
+                    <a href="#">About David</a>
                   </li>
                   <li
                     id="menu-item-3161"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3161"
                   >
-                    <a href="#">Profiles</a>
+                    <a href="#">About Us</a>
                   </li>
                   <li
                     id="menu-item-5633"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5633"
                   >
-                    <a href="#">DeFi</a>
+                    <a href="#">Become A Patron</a>
                   </li>
                   <li
                     id="menu-item-2752"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2752"
                   >
-                    <a href="#">Macro</a>
+                    <a href="#">Services</a>
                   </li>
                   <li
                     id="menu-item-2753"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2753"
                   >
-                    <a href="#">Markets</a>
+                    <a href="#">Lets Connect</a>
                   </li>
                   <li
                     id="menu-item-9235"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9235"
                   >
-                    <a href="#">Metaverse</a>
-                  </li>
-                  <li
-                    id="menu-item-4426"
-                    className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4426"
-                  >
-                    <a href="#">Regulation</a>
-                  </li>
-                  <li
-                    id="menu-item-2750"
-                    className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2750"
-                  >
-                    <a href="#">Education</a>
-                  </li>
-                  <li
-                    id="menu-item-2754"
-                    className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2754"
-                  >
-                    <a href="#">Op-Ed</a>
-                  </li>
-                  <li
-                    id="menu-item-6153"
-                    className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6153"
-                  >
-                    <a href="#">Sponsored</a>
+                    <a href="#">Coin Swap</a>
                   </li>
                 </ul>
               </div>
@@ -171,24 +148,20 @@ export default function SideNavBar() {
                   <div className="imgbox">
                     <img
                       alt=""
-                      data-src="https://blockworks.co/wp-content/uploads/2021/05/DAS_2021_LONDON-scaled.jpg"
                       className=" ls-is-cached lazyloaded"
-                      src="https://blockworks.co/wp-content/uploads/2021/05/DAS_2021_LONDON-scaled.jpg"
+                      src={example}
                     />
                     <noscript>
-                      <img
-                        src="https://blockworks.co/wp-content/uploads/2021/05/DAS_2021_LONDON-scaled.jpg"
-                        alt=""
-                      />
+                      <img src={example} alt="" />
                     </noscript>
                   </div>
                 </a>
                 <div className="card-content">
                   <div className="tags">
-                    <p className="post-tag">events</p>
+                    <p className="post-tag">Whats trending</p>
                   </div>
                   <a href="h#" className="card_title">
-                    Digital Asset Summit 2021 | London
+                    The Rise of the “Workcation” Lifestyle
                   </a>
 
                   <div className="post-creation-details">
@@ -200,33 +173,20 @@ export default function SideNavBar() {
                         className="author url fn"
                         rel="author"
                       >
-                        Julie Muroff
+                        {" "}
+                        Brittany VanDerBill
                       </a>
                     </span>
-                    <span className="slash-divider">/</span>
+                    <span className="slash-divider">/ </span>
                     <span className="posted-on">
                       <time
                         className="entry-date published"
                         datetime="2021-05-05T13:18:58-04:00"
                       >
-                        May 5, 2021
+                        October 20, 2021
                       </time>
                     </span>
                   </div>
-
-                  <div className="card_excerpt">
-                    <p>
-                      DAS is the institutionally focused crypto conference for
-                      asset managers and financial services professionals.
-                      Returning in 2021 as a two day, in person event, industry
-                      leaders from the world of finance and digital assets will
-                      gather to discuss crypto from the […]
-                    </p>
-                  </div>
-
-                  <a href="#" className="button">
-                    Subscribe Now
-                  </a>
                 </div>
               </div>
             </div>
@@ -236,38 +196,38 @@ export default function SideNavBar() {
                   alt=""
                   data-src="https://blockworks.co/wp-content/themes/blockworks/images/logo-blue.png"
                   className=" ls-is-cached lazyloaded"
-                  src="https://blockworks.co/wp-content/themes/blockworks/images/logo-blue.png"
+                  src={logo}
                 />
                 <noscript>
-                  <img
-                    src="https://blockworks.co/wp-content/themes/blockworks/images/logo-blue.png"
-                    alt=""
-                  />
+                  <img src={logo} alt="" />
                 </noscript>
               </div>
               <div className="slide-social">
                 <span>follow us</span>
                 <div>
-                  <a target="_blank" href="https://twitter.com/Blockworks_">
-                    
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/gokhshteinmedia?s=21"
+                  >
+                    <i class="fab fa-twitter fa-lg"></i>
                   </a>
                   <a
                     target="_blank"
-                    href="https://www.instagram.com/blockworks__/"
+                    href="https://www.instagram.com/gokhshteinmedia/?igshid=d73bi47bpcv6"
                   >
-                    
+                    <i class="fab fa-instagram fa-lg"></i>
                   </a>
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/company/the-blockworks-group"
+                    href="https://www.facebook.com/GokhshteinMedia/"
                   >
-                    
+                    <i class="fab fa-facebook fa-lg"></i>
                   </a>
                   <a
                     target="_blank"
-                    href="https://www.youtube.com/channel/UCkrwgzhIBKccuDsi_SvZtnQ"
+                    href="https://www.youtube.com/channel/UCePzY0YpGYCoFs1yZWQZ4kQ"
                   >
-                    
+                    <i class="fab fa-youtube fa-lg"></i>
                   </a>
                 </div>
               </div>
