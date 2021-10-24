@@ -24,6 +24,10 @@
   font-weight: bold;
   letter-spacing: 0.01em;
 }
+.headingAllmenu:hover {
+  color: rgb(37, 150, 190);
+  opacity: 1;
+}
 .allCategorymenu {
   background-color: rgb(30, 123, 156);
   color: white;
@@ -37,6 +41,7 @@
   font-family: "Times New Roman", Times, serif;
   margin-top: 10px 0px;
   line-height: 1.1;
+  transition: 0.34s;
 }
 .Block-section {
   flex: 25%;
