@@ -7,6 +7,11 @@
 .lifestyle-title {
   width: 92%;
   font-size: 18px;
+  transition: 0.34s;
+}
+.lifestyle-title:hover {
+  opacity: 1;
+  color: rgb(38, 150, 190);
 }
 .images {
   max-width: 44%;
@@ -39,7 +44,7 @@
 }
 
 .Date {
-  font-size: 1.39rem;
+  font-size: 1.6rem;
   font-weight: 1500;
 }
 .c-section {
@@ -48,6 +53,9 @@
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+}
+.c-section::-webkit-scrollbar {
+  display: none;
 }
 
 .lifeStyleSection {

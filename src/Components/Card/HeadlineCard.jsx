@@ -1,5 +1,5 @@
 import "./HeadlineCard.css";
-import test from "../images/test.png";
+
 import "./HeadlineCard.css";
 
 import moment from "moment";

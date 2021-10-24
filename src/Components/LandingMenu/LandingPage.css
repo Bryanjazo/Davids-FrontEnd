@@ -1,0 +1,55 @@
+.cardSections {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6rem;
+}
+
+.imageSection {
+  max-width: 38rem;
+}
+.categoryAllmenu {
+  padding: 3px;
+}
+.headingAllmenuDiv {
+  padding: 3px;
+  max-width: 37.5rem;
+}
+.author-dateAllmenu {
+  padding: 3px;
+}
+.headingAllDate {
+  font-size: 12px;
+  text-transform: none;
+  color: #676767;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+.allCategorymenu {
+  background-color: rgb(30, 123, 156);
+  color: white;
+  padding-left: 3px;
+  font-size: 11px;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+}
+.headingAllmenu {
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px 0px;
+  line-height: 1.1;
+}
+.Block-section {
+  flex: 25%;
+  padding: 5rem 0rem 0rem 0rem;
+}
+@media screen and (max-width: 992px) {
+  .Block-section {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardSections {
+    flex-direction: column;
+  }
+}

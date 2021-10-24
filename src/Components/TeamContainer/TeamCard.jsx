@@ -1,5 +1,5 @@
 import "./TeamCard.css";
-import user from "../images/user.png";
+
 import React from "react";
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from "react-share";
 
@@ -9,13 +9,12 @@ import {
   TwitterShareButton,
 } from "react-share";
 
-
 export default function TeamCard() {
   return (
     <div id="c-body">
       <div id="card-container">
         <div class="card">
-          <img src={user} id="c-img" alt="..." />
+          <img src="" id="c-img" alt="..." />
           <div class="name">Name</div>
           <div class="subHeader">
             <p>Position</p>

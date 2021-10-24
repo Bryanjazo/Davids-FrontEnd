@@ -19,6 +19,12 @@
   color: black;
   font-size: 1.2rem;
   padding-bottom: 20px;
+  transition: 0.34s;
+}
+
+.header:hover {
+  opacity: 1;
+  color: rgb(37, 150, 190);
 }
 .hl-card {
   padding-top: 10px;
@@ -29,17 +35,17 @@
 }
 
 .date {
-  font-size: 12px;
+  font-size: 1.4rem;
   padding-right: 20px;
 }
 
 .category {
-  font-size: 12px;
+  font-size: 1.4rem;
   padding-right: 20px;
 }
 
 .author {
-  font-size: 12px;
+  font-size: 1.4rem;
 }
 .paragraph-text {
   font-family: "Times New Roman", Times, serif;

@@ -26,9 +26,11 @@ export default function LearnCrypto() {
                     <h1 className="lifestyle-title">{arr.title}</h1>
                   </div>
                   <div className="AllParagraphs">
-                    <p className="Date">
-                      {moment(arr._createdAt).format("MMMM Do YYYY")}
-                    </p>
+                    <b>
+                      <p className="Date">
+                        {moment(arr._createdAt).format("MMMM Do YYYY")}
+                      </p>
+                    </b>
                   </div>
                 </div>
               </div>
