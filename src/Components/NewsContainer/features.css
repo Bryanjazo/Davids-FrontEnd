@@ -140,3 +140,9 @@ input[type="checkbox"] ~ ul {
 ul li:last-child {
   margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .video1 {
+    padding: 20px 90px 0px 10px;
+  }
+}

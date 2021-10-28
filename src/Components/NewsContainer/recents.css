@@ -13,9 +13,11 @@
 
 @media only screen and (max-width: 768px) {
   .recentSection {
+    margin-top: 400px;
     width: 100%;
     float: left;
-    overflow: scroll;
+
+    max-height: 90rem;
   }
 
 
