@@ -5,11 +5,14 @@
   max-width: calc(100vw - 50px);
 }
 .blogTitle {
-  font-size: 4.2rem;
+  font-size: 2.9rem;
   width: 100%;
   font-family: "Times New Roman", Times, serif;
 }
-
+.trendingTitle {
+  font-size: 4.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
 .body {
   padding-top: 40px;
 }
@@ -22,29 +25,38 @@
   padding-right: 900px;
 }
 .One {
+  padding: 0px 40px 0px 40px;
   width: 25%;
+  margin-top: 530px;
 }
 .Two {
   width: 50%;
 }
 
 .Three {
+  padding-left: 20px;
   width: 25%;
 }
 .blogTitleContainer {
   font-size: 26px;
   padding: 30px 0px 0px 0px;
+}
+.lastTitleContainer {
+  font-size: 26px;
 
+  padding: 30px 0px 0px 0px;
   border-bottom: 4px solid black;
 }
-/* .headline {
-    padding-left: 1rem;
-    font-size: 32px;
-    padding: 10px;
-    padding-right: 10px;
-    border-top: 6px solid black;
-    border-bottom: 2px solid black;
-  } */
+.lastTitle {
+  font-size: 4.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.TrendingTitleContainer {
+  font-size: 26px;
+
+  padding: 30px 0px 0px 0px;
+  border-bottom: 4px solid black;
+}
 
 .categoriesContainer {
   display: flex;
@@ -57,15 +69,42 @@
   width: 45%;
 }
 .imgContainer {
-  border-bottom: 2px solid black;
+  padding-top: 20px;
+
   margin-right: 20px;
-  width: 90rem;
+  width: 100%;
 
   padding-bottom: 20px;
 }
+.infoContainer {
+  display: flex;
+  padding-top: 8px;
+}
 
+.authorImgs {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.authorDate {
+  display: flex;
+}
+.sharableLinks {
+  display: flex;
+}
+.sharableLinks {
+  width: 24rem;
+  margin-top: 550px;
+}
+.shareText {
+  padding: 3px 10px 0px 0px;
+}
+.shareIcon {
+  padding: 3px;
+}
 .mainImage {
-  width: 90rem;
+  width: 100%;
 
   max-height: 100%;
   max-width: calc(100vw - 50px);

@@ -6,7 +6,25 @@ import imageUrlBuilder from "@sanity/image-url";
 import RingLoader from "react-spinners/RingLoader";
 import { css } from "@emotion/react";
 import { Link } from "react-router-dom";
+import Recents from "../Card/RecentsCard";
+
+import ReactPlayer from "react-player";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  TwitterShareButton,
+  EmailIcon,
+  EmailShareButton,
+  TelegramIcon,
+  TelegramShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from "react-share";
 import moment from "moment";
+
 import { useSelector } from "react-redux";
 import "./BothPost.css";
 const builder = imageUrlBuilder(sanityClient);
@@ -63,25 +81,21 @@ export default function OnePost() {
   return (
     <div>
       <div className="blogPost">
-        <div className="One"></div>
+        <div className="One">
+          <div className="videoLinks">
+            <ReactPlayer
+              width="100%"
+              height="25rem"
+              url="https://www.youtube.com/watch?v=99TA8w4fJdc&feature=emb_title"
+            />
+          </div>
+        </div>
 
         <div className="Two">
           <div className="blogTitleContainer">
             <h1 className="blogTitle">{postData.title}</h1>
           </div>
 
-          <div className="categoriesContainer">
-            <p className="category">
-              <i class="far fa-clone"></i> {postData.categories[0]}
-            </p>
-            <p className="date">
-              <i class="far fa-calendar"></i>{" "}
-              {moment(postData._createdAt).format("MMMM Do YYYY")}
-            </p>
-            <p className="author">
-              <i class="far fa-user-circle"></i> {postData.authorName}
-            </p>
-          </div>
           <div className="imgContainer">
             <img
               className="mainImage"
@@ -89,6 +103,28 @@ export default function OnePost() {
               alt=""
               style={{ height: "400px" }}
             />
+          </div>
+          <div className="authorDate">
+            <div className="authoImg">
+              {!postData.authorImage ? (
+                ""
+              ) : (
+                <img
+                  className="authorImgs"
+                  src={urlFor(postData.authorImage.asset._ref).url()}
+                  alt=""
+                />
+              )}
+            </div>
+            <div className="infoContainer">
+              <p className="author">
+                By {postData.authorName} {"/"}
+              </p>
+
+              <p className="date">
+                {moment(postData._createdAt).format("MMMM Do YYYY")}
+              </p>
+            </div>
           </div>
           <div className="body">
             <BlockContent
@@ -100,7 +136,54 @@ export default function OnePost() {
         </div>
 
         <div className="Three">
-          <h1>Three</h1>
+          <div className="sharableLinks">
+            <div className="shareText">
+              <p>Share</p>
+            </div>
+
+            <div className="shareIcon">
+              <FacebookShareButton
+                url={"http://localhost:3000/Blogs/" + postData.slug.current}
+              >
+                <FacebookIcon size={25} round={true} />
+              </FacebookShareButton>
+            </div>
+            <div className="shareIcon">
+              <TwitterShareButton
+                url={"http://localhost:3000/Blogs/" + postData.slug.current}
+              >
+                <TwitterIcon size={25} round={true} />
+              </TwitterShareButton>
+            </div>
+            <div className="shareIcon">
+              <LinkedinShareButton
+                url={"http://localhost:3000/Blogs/" + postData.slug.current}
+              >
+                <LinkedinIcon size={25} round={true} />
+              </LinkedinShareButton>
+            </div>
+            <div className="shareIcon">
+              <EmailShareButton
+                url={"http://localhost:3000/Blogs/" + postData.slug.current}
+              >
+                <EmailIcon size={25} round={true} />
+              </EmailShareButton>
+            </div>
+            <div className="shareIcon">
+              <TelegramShareButton
+                url={"http://localhost:3000/Blogs/" + postData.slug.current}
+              >
+                <TelegramIcon size={25} round={true} />
+              </TelegramShareButton>
+            </div>
+            <div className="shareIcon">
+              <WhatsappShareButton
+                url={"http://localhost:3000/Blogs/" + postData.slug.current}
+              >
+                <WhatsappIcon size={25} round={true} />
+              </WhatsappShareButton>
+            </div>
+          </div>
         </div>
       </div>
       <div className="relatedTopics">

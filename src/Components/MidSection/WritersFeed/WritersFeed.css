@@ -19,6 +19,14 @@
   font-size: 1.6rem;
 }
 
+.lifeStyleHeaders {
+  font-size: 32px;
+  padding: 10px;
+  color: #26abff;
+  margin-right: 55px;
+  border-top: 6px solid black;
+  border-bottom: 2px solid black;
+}
 .recentsTitleWriters {
   font-size: 32px;
   padding: 10px;
@@ -33,3 +41,10 @@
 }
 
 /* opl */
+
+@media only screen and (max-width: 768px) {
+  .writersFeed-section {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
