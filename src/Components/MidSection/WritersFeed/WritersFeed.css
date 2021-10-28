@@ -32,4 +32,10 @@
   width: 92%;
 }
 
+@media only screen and (max-width: 800px) {
+  .recentsTitleWriters{
+    width: 100%;
+  }
+}
+
 /* opl */
