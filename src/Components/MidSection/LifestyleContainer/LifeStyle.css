@@ -71,3 +71,14 @@
   /* width: 28%; */
   padding-right: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+  .lifeStyleHeader {
+    width: 100% !important;
+    padding-right: 0px;
+  }
+
+  .lifeStyleSection {
+    width: 100% !important;
+  }
+}

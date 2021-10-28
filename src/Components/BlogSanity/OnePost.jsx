@@ -5,7 +5,9 @@ import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import RingLoader from "react-spinners/RingLoader";
 import { css } from "@emotion/react";
+import { Link } from "react-router-dom";
 import moment from "moment";
+import { useSelector } from "react-redux";
 import "./BothPost.css";
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -22,6 +24,7 @@ const override = css`
 
 export default function OnePost() {
   const [postData, setPostData] = useState(null);
+  const { blogs } = useSelector((state) => state.crypto);
   const { slug } = useParams();
   console.log(postData);
   useEffect(() => {
@@ -56,77 +59,89 @@ export default function OnePost() {
         </div>
       </div>
     );
+
   return (
     <div>
-      <div className="rightSide">
-        <h1>gello</h1>
-      </div>
-      <div className="blogTitleContainer">
-        <h1 className="blogTitle">{postData.title}</h1>
-      </div>
-      <div className="categoriesContainer">
-        <p className="category">
-          <i class="far fa-clone"></i> {postData.categories[0]}
-        </p>
-        <p className="date">
-          <i class="far fa-calendar"></i>{" "}
-          {moment(postData._createdAt).format("MMMM Do YYYY")}
-        </p>
-        <p className="author">
-          <i class="far fa-user-circle"></i> {postData.authorName}
-        </p>
-      </div>
+      <div className="blogPost">
+        <div className="One"></div>
 
-      <div className="BlogContainer">
-        <div className="imgContainer">
-          <img
-            className="mainImage"
-            src={urlFor(postData.mainImage).url()}
-            alt=""
-            style={{ height: "400px" }}
-          />
+        <div className="Two">
+          <div className="blogTitleContainer">
+            <h1 className="blogTitle">{postData.title}</h1>
+          </div>
+
+          <div className="categoriesContainer">
+            <p className="category">
+              <i class="far fa-clone"></i> {postData.categories[0]}
+            </p>
+            <p className="date">
+              <i class="far fa-calendar"></i>{" "}
+              {moment(postData._createdAt).format("MMMM Do YYYY")}
+            </p>
+            <p className="author">
+              <i class="far fa-user-circle"></i> {postData.authorName}
+            </p>
+          </div>
+          <div className="imgContainer">
+            <img
+              className="mainImage"
+              src={urlFor(postData.mainImage).url()}
+              alt=""
+              style={{ height: "400px" }}
+            />
+          </div>
+          <div className="body">
+            <BlockContent
+              blocks={postData.body}
+              projectId={sanityClient.clientConfig.projectId}
+              dataset={sanityClient.clientConfig.dataset}
+            />
+          </div>
         </div>
-        <div className="body">
-          <BlockContent
-            blocks={postData.body}
-            projectId={sanityClient.clientConfig.projectId}
-            dataset={sanityClient.clientConfig.dataset}
-          />
+
+        <div className="Three">
+          <h1>Three</h1>
+        </div>
+      </div>
+      <div className="relatedTopics">
+        <div className="topicsTitle">
+          <h1>Realted Topics</h1>
+        </div>
+        <div className="blogSection">
+          {blogs.map((item) =>
+            item.map((list) => (
+              <div className="Blog">
+                <Link
+                  to={"/Blogs/" + list.slug.current}
+                  key={list.slug.current}
+                >
+                  <div className="imageBlog">
+                    {console.log(list)}
+                    <img src={list.mainImage.asset.url} />
+                  </div>
+                  <div className="categoryAllmenu">
+                    <a className="allCategorymenu">
+                      {" "}
+                      {list.categories[0] === "Recents"
+                        ? list.categories[1]
+                        : list.categories[0]}
+                    </a>
+                  </div>
+                  <div className="headingAllmenuDiv">
+                    <a className="headingAllmenu">{list.title}</a>
+                  </div>
+                  <div className="author-dateAllmenu">
+                    <a className="headingAllDate">
+                      {list.authorName} /{" "}
+                      {moment(list._createdAt).format("MMMM Do YYYY")}
+                    </a>
+                  </div>
+                </Link>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>
-
-    // <div className=" min-h-screen p-12">
-    //   <div className="container shadow-lg mx-auto rounded-lg">
-    //     <div className="relative">
-    //       <div className="absolute h-full w-full flex items-center justify-center p-8">
-    //         {/* Title Section */}
-    //         <div className="bg-white bg-opacity-75 rounded p-12">
-    //           <h2 className="cursive text-3xl lg:text-6xl mb-4">
-    //             {postData.title}
-    //           </h2>
-    //           <div className="flex justify-center text-gray-800">
-    //             <h4 className="cursive flex items-center pl-2 text-2xl">
-    //               {postData.name}
-    //             </h4>
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <img
-    //
-    //         src={urlFor(postData.mainImage).url()}
-    //         alt=""
-    //         style={{ height: "400px" }}
-    //       />
-    //     </div>
-    //     <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
-    //       <BlockContent
-    //         blocks={postData.body}
-    //         projectId={sanityClient.clientConfig.projectId}
-    //         dataset={sanityClient.clientConfig.dataset}
-    //       />
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
