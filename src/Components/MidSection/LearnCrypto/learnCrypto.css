@@ -5,3 +5,10 @@
   border-bottom: 2px solid black;
   margin-right: 80px;
 }
+
+
+@media only screen and (max-width: 768px){
+  .containerAll{
+    width: 100%;
+  }
+}

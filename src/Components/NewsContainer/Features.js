@@ -31,10 +31,10 @@ export default function Features() {
           <h1>Realted Videos</h1>
         </div>
         <div className="sub-video-container">
-          <div className="video1">
+          {/* <div className="video1">
             {" "}
             <ReactPlayer
-              width="130%"
+              width="100%"
               height="25rem"
               url="youtube.com/watch?v=5G2dkiswEhg"
             />
@@ -42,11 +42,11 @@ export default function Features() {
           <div className="video1">
             {" "}
             <ReactPlayer
-              width="135%"
+              width="100%"
               height="25rem"
               url="https://www.youtube.com/watch?v=99TA8w4fJdc&feature=emb_title"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
